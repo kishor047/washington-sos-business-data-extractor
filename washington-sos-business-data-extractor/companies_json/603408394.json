@@ -1,0 +1,147 @@
+{
+    "company_name": "A A & J FINE FINISHES INC",
+    "ubi": "603408394",
+    "business_information": {
+        "Business Name": "A A & J FINE FINISHES INC",
+        "UBI Number": "603 408 394",
+        "Business Type": "FOREIGN PROFIT CORPORATION",
+        "Business Status": "DELINQUENT",
+        "Principal Office Street Address": "1072 S SIGNAL POINT RD, POST FALLS, ID, 83854-5791, UNITED STATES",
+        "Principal Office Mailing Address": "PO BOX 2380, POST FALLS, ID, 83877-2380, UNITED STATES",
+        "Expiration Date": "10/31/2025",
+        "Jurisdiction:\nUNITED STATES, IDAHO": "Jurisdiction:\nUNITED STATES, IDAHO",
+        "Formation/ Registration Date": "10/11/2021",
+        "Period of Duration": "PERPETUAL",
+        "Nature of Business": "CONSTRUCTION"
+    },
+    "registered_agent": {
+        "name": "ADAM METZGER",
+        "street_address": "16423 E MAIN AVE, SPOKANE VLY, WA, 99037-9522, UNITED STATES"
+    },
+    "governors": [
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "ADAM",
+            "last_name": "METZGER"
+        }
+    ],
+    "filing_history": [
+        {
+            "filing_number": "0023054557",
+            "filing_date_time": "11/01/2025 03:24:08 AM",
+            "effective_date": "11/01/2025",
+            "filing_type": "DELINQUENT ANNUAL REPORT NOTICE"
+        },
+        {
+            "filing_number": "0022806783",
+            "filing_date_time": "09/01/2025 10:36:52 AM",
+            "effective_date": "09/01/2025",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0021142819",
+            "filing_date_time": "11/01/2024 07:52:40 AM",
+            "effective_date": "11/01/2024",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0021113906",
+            "filing_date_time": "11/01/2024 03:08:17 AM",
+            "effective_date": "11/01/2024",
+            "filing_type": "DELINQUENT ANNUAL REPORT NOTICE"
+        },
+        {
+            "filing_number": "0020861015",
+            "filing_date_time": "09/04/2024 07:16:51 PM",
+            "effective_date": "09/04/2024",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0019218944",
+            "filing_date_time": "10/11/2023 10:25:31 AM",
+            "effective_date": "10/11/2023",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0018986472",
+            "filing_date_time": "09/01/2023 02:58:36 AM",
+            "effective_date": "09/01/2023",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0017344761",
+            "filing_date_time": "09/27/2022 09:15:11 AM",
+            "effective_date": "09/27/2022",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0017229832",
+            "filing_date_time": "09/01/2022 02:04:42 AM",
+            "effective_date": "09/01/2022",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0015793153",
+            "filing_date_time": "10/11/2021 01:08:17 PM",
+            "effective_date": "10/11/2021",
+            "filing_type": "REQUALIFICATION"
+        },
+        {
+            "filing_number": "0012216238",
+            "filing_date_time": "07/03/2019 12:00:03 AM",
+            "effective_date": "07/03/2019",
+            "filing_type": "STATEMENT OF TERMINATION"
+        },
+        {
+            "filing_number": "0011810950",
+            "filing_date_time": "04/01/2019 12:46:12 AM",
+            "effective_date": "04/01/2019",
+            "filing_type": "DELINQUENT ANNUAL REPORT NOTICE"
+        },
+        {
+            "filing_number": "0011580983",
+            "filing_date_time": "02/01/2019 02:04:28 AM",
+            "effective_date": "02/01/2019",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0010307163",
+            "filing_date_time": "03/13/2018 12:35:42 PM",
+            "effective_date": "03/13/2018",
+            "filing_type": "REQUALIFICATION"
+        },
+        {
+            "filing_number": "0009257173",
+            "filing_date_time": "10/18/2016 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "DISSOLUTION/WITHDRAWAL"
+        },
+        {
+            "filing_number": "0008637558",
+            "filing_date_time": "05/18/2015 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0001836574",
+            "filing_date_time": "03/23/2015 01:26:47 PM",
+            "effective_date": "",
+            "filing_type": "STATEMENT OF CHANGE"
+        },
+        {
+            "filing_number": "0001291343",
+            "filing_date_time": "07/18/2014 12:21:03 PM",
+            "effective_date": "",
+            "filing_type": "INITIAL REPORT"
+        },
+        {
+            "filing_number": "0001891834",
+            "filing_date_time": "06/04/2014 03:43:56 PM",
+            "effective_date": "",
+            "filing_type": "FOREIGN REGISTRATION STATEMENT"
+        }
+    ],
+    "name_change_history": []
+}

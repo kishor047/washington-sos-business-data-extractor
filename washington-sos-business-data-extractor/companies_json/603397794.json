@@ -1,0 +1,69 @@
+{
+    "company_name": "A.A. ARTISTIC METAL WORKS LLC",
+    "ubi": "603397794",
+    "business_information": {
+        "Business Name": "A.A. ARTISTIC METAL WORKS LLC",
+        "UBI Number": "603 397 794",
+        "Business Type": "WA LIMITED LIABILITY COMPANY",
+        "Business Status": "ADMINISTRATIVELY DISSOLVED",
+        "Principal Office Street Address": "2237 DAVISON AVE, RICHLAND, WA, 99354, UNITED STATES",
+        "Expiration Date": "04/30/2017",
+        "Jurisdiction:\nUNITED STATES, WASHINGTON": "Jurisdiction:\nUNITED STATES, WASHINGTON",
+        "Formation/ Registration Date": "04/24/2014",
+        "Period of Duration": "PERPETUAL",
+        "Inactive Date": "09/01/2017"
+    },
+    "registered_agent": {
+        "name": "ROBERT A WILSON",
+        "street_address": "2237 DAVISON AVE, RICHLAND, WA, 99354-0000, UNITED STATES"
+    },
+    "governors": [
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "RICHARD",
+            "last_name": "WILSON"
+        },
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "ROBERT A",
+            "last_name": "WILSON"
+        }
+    ],
+    "filing_history": [
+        {
+            "filing_number": "0009601206",
+            "filing_date_time": "09/01/2017 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ADMINISTRATIVE DISSOLUTION"
+        },
+        {
+            "filing_number": "0009059279",
+            "filing_date_time": "03/22/2016 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0008670549",
+            "filing_date_time": "04/15/2015 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0001543376",
+            "filing_date_time": "05/21/2014 02:22:25 PM",
+            "effective_date": "",
+            "filing_type": "INITIAL REPORT"
+        },
+        {
+            "filing_number": "0001341982",
+            "filing_date_time": "04/28/2014 04:31:09 PM",
+            "effective_date": "",
+            "filing_type": "CERTIFICATE OF FORMATION"
+        }
+    ],
+    "name_change_history": []
+}

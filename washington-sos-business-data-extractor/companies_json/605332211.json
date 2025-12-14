@@ -1,0 +1,75 @@
+{
+    "company_name": "\"AA\" SUITE ADULT FAMILY HOME LLC",
+    "ubi": "605332211",
+    "business_information": {
+        "Business Name": "\"AA\" SUITE ADULT FAMILY HOME LLC",
+        "UBI Number": "605 332 211",
+        "Business Type": "WA LIMITED LIABILITY COMPANY",
+        "Business Status": "ACTIVE",
+        "Principal Office Street Address": "10215 SE 224TH ST, KENT, WA, 98031-3208, UNITED STATES",
+        "Principal Office Mailing Address": "10215 SE 224TH ST, KENT, WA, 98031-3208, UNITED STATES",
+        "Expiration Date": "09/30/2026",
+        "Jurisdiction:\nUNITED STATES, WASHINGTON": "Jurisdiction:\nUNITED STATES, WASHINGTON",
+        "Formation/ Registration Date": "09/12/2023",
+        "Period of Duration": "PERPETUAL",
+        "Nature of Business": "HEALTH CARE, SOCIAL ASSISTANCE & SERVICE ORGANIZATION"
+    },
+    "registered_agent": {
+        "name": "GIRI RIZAL",
+        "street_address": "10215 SE 224TH ST, KENT, WA, 98031-3208, UNITED STATES"
+    },
+    "governors": [
+        {
+            "title": "GOVERNOR",
+            "type": "ENTITY",
+            "entity_name": "EASTHILL CAREHOME LLC",
+            "first_name": "GIRI",
+            "last_name": "RIZAL"
+        }
+    ],
+    "filing_history": [
+        {
+            "filing_number": "0022887772",
+            "filing_date_time": "09/29/2025 11:31:54 AM",
+            "effective_date": "09/29/2025",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0022630405",
+            "filing_date_time": "08/01/2025 05:51:38 AM",
+            "effective_date": "08/01/2025",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0021521566",
+            "filing_date_time": "01/15/2025 10:43:04 AM",
+            "effective_date": "01/15/2025",
+            "filing_type": "AMENDED CERTIFICATE OF FORMATION"
+        },
+        {
+            "filing_number": "0020876306",
+            "filing_date_time": "09/06/2024 11:22:34 AM",
+            "effective_date": "09/06/2024",
+            "filing_type": "AMENDED CERTIFICATE OF FORMATION"
+        },
+        {
+            "filing_number": "0020796794",
+            "filing_date_time": "09/03/2024 10:44:46 PM",
+            "effective_date": "09/03/2024",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0020688503",
+            "filing_date_time": "08/01/2024 07:52:14 AM",
+            "effective_date": "08/01/2024",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0019077987",
+            "filing_date_time": "09/12/2023 02:32:20 PM",
+            "effective_date": "09/12/2023",
+            "filing_type": "CERTIFICATE OF FORMATION"
+        }
+    ],
+    "name_change_history": []
+}

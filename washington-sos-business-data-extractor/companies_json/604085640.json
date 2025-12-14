@@ -1,0 +1,124 @@
+{
+    "company_name": "A A A, CORP.",
+    "ubi": "604085640",
+    "business_information": {
+        "Business Name": "A A A, CORP.",
+        "UBI Number": "604 085 640",
+        "Business Type": "WA PROFIT CORPORATION",
+        "Business Status": "ADMINISTRATIVELY DISSOLVED",
+        "Principal Office Street Address": "17715 15TH AVE NE STE C, SHORELINE, WA, 98155, UNITED STATES",
+        "Expiration Date": "02/28/2022",
+        "Jurisdiction:\nUNITED STATES, WASHINGTON": "Jurisdiction:\nUNITED STATES, WASHINGTON",
+        "Formation/ Registration Date": "02/01/2017",
+        "Period of Duration": "PERPETUAL",
+        "Inactive Date": "02/09/2023",
+        "Nature of Business": "OTHER SERVICES"
+    },
+    "registered_agent": {
+        "name": "CHARLIE DANG TAX & ACCOUNTING, INC.",
+        "street_address": "1215 S MAIN ST, SEATTLE, WA, 98144-2030, UNITED STATES"
+    },
+    "governors": [
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "HAO",
+            "last_name": "THAI"
+        },
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "NGAN",
+            "last_name": "NGO"
+        }
+    ],
+    "filing_history": [
+        {
+            "filing_number": "0018014449",
+            "filing_date_time": "02/09/2023 07:54:25 AM",
+            "effective_date": "02/09/2023",
+            "filing_type": "ADMINISTRATIVE DISSOLUTION"
+        },
+        {
+            "filing_number": "0016397327",
+            "filing_date_time": "03/01/2022 12:48:29 AM",
+            "effective_date": "03/01/2022",
+            "filing_type": "DELINQUENT ANNUAL REPORT NOTICE"
+        },
+        {
+            "filing_number": "0016130892",
+            "filing_date_time": "01/04/2022 07:04:38 PM",
+            "effective_date": "01/04/2022",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0014561618",
+            "filing_date_time": "01/22/2021 12:54:31 PM",
+            "effective_date": "01/22/2021",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0014459382",
+            "filing_date_time": "01/01/2021 02:02:29 AM",
+            "effective_date": "01/01/2021",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0012958859",
+            "filing_date_time": "01/10/2020 04:20:25 PM",
+            "effective_date": "01/10/2020",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0012880715",
+            "filing_date_time": "01/01/2020 02:03:41 AM",
+            "effective_date": "01/01/2020",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0011520490",
+            "filing_date_time": "01/09/2019 03:28:50 PM",
+            "effective_date": "01/09/2019",
+            "filing_type": "STATEMENT OF RESIGNATION"
+        },
+        {
+            "filing_number": "0011509869",
+            "filing_date_time": "01/04/2019 11:06:01 AM",
+            "effective_date": "02/01/2019",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0011452574",
+            "filing_date_time": "01/01/2019 02:03:43 AM",
+            "effective_date": "01/01/2019",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0010096702",
+            "filing_date_time": "02/05/2018 05:17:15 AM",
+            "effective_date": "02/05/2018",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0009914056",
+            "filing_date_time": "01/01/2018 02:03:47 AM",
+            "effective_date": "01/01/2018",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0002740410",
+            "filing_date_time": "02/01/2017 01:40:11 PM",
+            "effective_date": "",
+            "filing_type": "INITIAL REPORT"
+        },
+        {
+            "filing_number": "0002843705",
+            "filing_date_time": "02/01/2017 01:37:05 PM",
+            "effective_date": "",
+            "filing_type": "ARTICLES OF INCORPORATION"
+        }
+    ],
+    "name_change_history": []
+}

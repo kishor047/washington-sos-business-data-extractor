@@ -1,0 +1,286 @@
+{
+    "company_name": "A.A. ALARM COMPANY",
+    "ubi": "601155352",
+    "business_information": {
+        "Business Name": "A.A. ALARM COMPANY",
+        "UBI Number": "601 155 352",
+        "Business Type": "WA PROFIT CORPORATION",
+        "Business Status": "ACTIVE",
+        "Principal Office Street Address": "7323 135TH PL SE, NEWCASTLE, WA, 98059-3126, UNITED STATES",
+        "Principal Office Mailing Address": "7323 135TH PL SE, NEWCASTLE, WA, 98059-3126, UNITED STATES",
+        "Expiration Date": "01/31/2026",
+        "Jurisdiction:\nUNITED STATES, WASHINGTON": "Jurisdiction:\nUNITED STATES, WASHINGTON",
+        "Formation/ Registration Date": "01/18/1989",
+        "Period of Duration": "PERPETUAL",
+        "Nature of Business": "CONSULTING"
+    },
+    "registered_agent": {
+        "name": "ABE ANGELL",
+        "street_address": "7323 135TH PL SE, NEWCASTLE, WA, 98059-3126, UNITED STATES"
+    },
+    "governors": [
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "ABE L",
+            "last_name": "ANGELL"
+        },
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "MARLENE",
+            "last_name": "ANGELL"
+        }
+    ],
+    "filing_history": [
+        {
+            "filing_number": "0023260527",
+            "filing_date_time": "12/01/2025 11:14:30 AM",
+            "effective_date": "12/01/2025",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0021944172",
+            "filing_date_time": "03/17/2025 02:38:28 PM",
+            "effective_date": "03/17/2025",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0021596989",
+            "filing_date_time": "02/01/2025 04:01:33 AM",
+            "effective_date": "02/01/2025",
+            "filing_type": "DELINQUENT ANNUAL REPORT NOTICE"
+        },
+        {
+            "filing_number": "0021309172",
+            "filing_date_time": "12/01/2024 01:33:09 PM",
+            "effective_date": "12/01/2024",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0019781001",
+            "filing_date_time": "02/01/2024 07:10:14 PM",
+            "effective_date": "02/01/2024",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0019744264",
+            "filing_date_time": "02/01/2024 12:12:22 PM",
+            "effective_date": "02/01/2024",
+            "filing_type": "DELINQUENT ANNUAL REPORT NOTICE"
+        },
+        {
+            "filing_number": "0019427787",
+            "filing_date_time": "12/01/2023 04:59:51 AM",
+            "effective_date": "12/01/2023",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0017882353",
+            "filing_date_time": "01/24/2023 12:55:15 PM",
+            "effective_date": "01/24/2023",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0017642017",
+            "filing_date_time": "12/01/2022 07:36:51 AM",
+            "effective_date": "12/01/2022",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0016361352",
+            "filing_date_time": "02/10/2022 03:56:18 PM",
+            "effective_date": "02/10/2022",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0016255296",
+            "filing_date_time": "02/01/2022 01:54:39 AM",
+            "effective_date": "02/01/2022",
+            "filing_type": "DELINQUENT ANNUAL REPORT NOTICE"
+        },
+        {
+            "filing_number": "0015993696",
+            "filing_date_time": "12/01/2021 07:53:34 AM",
+            "effective_date": "12/01/2021",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0014554633",
+            "filing_date_time": "01/20/2021 11:33:46 AM",
+            "effective_date": "01/20/2021",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0014337853",
+            "filing_date_time": "12/01/2020 03:46:49 AM",
+            "effective_date": "12/01/2020",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0012983322",
+            "filing_date_time": "01/22/2020 01:37:22 PM",
+            "effective_date": "01/22/2020",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0012768848",
+            "filing_date_time": "12/01/2019 05:12:51 AM",
+            "effective_date": "12/01/2019",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0011517276",
+            "filing_date_time": "01/08/2019 12:53:52 PM",
+            "effective_date": "01/08/2019",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0011345878",
+            "filing_date_time": "12/01/2018 04:44:04 AM",
+            "effective_date": "12/01/2018",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0010311747",
+            "filing_date_time": "03/15/2018 01:59:14 PM",
+            "effective_date": "03/15/2018",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0010034903",
+            "filing_date_time": "02/01/2018 01:27:27 AM",
+            "effective_date": "02/01/2018",
+            "filing_type": "DELINQUENT ANNUAL REPORT NOTICE"
+        },
+        {
+            "filing_number": "0009827169",
+            "filing_date_time": "12/01/2017 04:16:23 AM",
+            "effective_date": "12/01/2017",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0009300467",
+            "filing_date_time": "01/09/2017 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0008930524",
+            "filing_date_time": "01/07/2016 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0008659589",
+            "filing_date_time": "12/24/2014 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0008816746",
+            "filing_date_time": "12/23/2013 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0008149544",
+            "filing_date_time": "12/26/2012 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0008149543",
+            "filing_date_time": "01/25/2012 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0008079318",
+            "filing_date_time": "01/19/2011 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0006873749",
+            "filing_date_time": "01/13/2010 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0006524292",
+            "filing_date_time": "01/02/2009 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0006177589",
+            "filing_date_time": "01/07/2008 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0005992434",
+            "filing_date_time": "01/02/2007 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0005685582",
+            "filing_date_time": "01/09/2006 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0005376913",
+            "filing_date_time": "12/30/2004 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0005233367",
+            "filing_date_time": "01/03/2003 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0004655265",
+            "filing_date_time": "01/16/2002 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0004057115",
+            "filing_date_time": "01/24/2001 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003779160",
+            "filing_date_time": "01/02/2000 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0004150828",
+            "filing_date_time": "01/12/1999 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003571164",
+            "filing_date_time": "01/06/1998 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003358435",
+            "filing_date_time": "01/18/1989 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ARTICLES OF INCORPORATION"
+        }
+    ],
+    "name_change_history": []
+}

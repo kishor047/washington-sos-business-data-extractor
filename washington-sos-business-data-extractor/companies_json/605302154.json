@@ -1,0 +1,88 @@
+{
+    "company_name": "A&A LANDSCAPING AND CONCRETE LLC",
+    "ubi": "605302154",
+    "business_information": {
+        "Business Name": "A&A LANDSCAPING AND CONCRETE LLC",
+        "UBI Number": "605 302 154",
+        "Business Type": "WA LIMITED LIABILITY COMPANY",
+        "Business Status": "ACTIVE",
+        "Principal Office Street Address": "16932 ASH WAY, LYNNWOOD, WA, 98037-5326, UNITED STATES",
+        "Principal Office Mailing Address": "16932 ASH WAY, LYNNWOOD, WA, 98037-5326, UNITED STATES",
+        "Expiration Date": "08/31/2026",
+        "Jurisdiction:\nUNITED STATES, WASHINGTON": "Jurisdiction:\nUNITED STATES, WASHINGTON",
+        "Formation/ Registration Date": "08/14/2023",
+        "Period of Duration": "PERPETUAL",
+        "Nature of Business": "OTHER SERVICES, LANDSCAPE AND MAINTENANCE CONCRETE WORKS WALL CONTENTION FENCING"
+    },
+    "registered_agent": {
+        "name": "ANA DAISY GARCIA RAMOS",
+        "street_address": "16932 ASH WAY, LYNNWOOD, WA, 98037-5326, UNITED STATES"
+    },
+    "governors": [
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "ANA DAISY",
+            "last_name": "GARCIA RAMOS"
+        },
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "ANGEL",
+            "last_name": "GARCIA GARCES"
+        }
+    ],
+    "filing_history": [
+        {
+            "filing_number": "0022693752",
+            "filing_date_time": "08/12/2025 01:01:28 PM",
+            "effective_date": "08/12/2025",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0022483818",
+            "filing_date_time": "07/01/2025 06:34:03 AM",
+            "effective_date": "07/01/2025",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0021348602",
+            "filing_date_time": "12/07/2024 03:32:04 PM",
+            "effective_date": "12/07/2024",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0020823438",
+            "filing_date_time": "09/04/2024 01:35:56 PM",
+            "effective_date": "09/04/2024",
+            "filing_type": "DELINQUENT ANNUAL REPORT NOTICE"
+        },
+        {
+            "filing_number": "0020537307",
+            "filing_date_time": "07/01/2024 07:59:35 AM",
+            "effective_date": "07/01/2024",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0018942852",
+            "filing_date_time": "08/15/2023 03:36:04 PM",
+            "effective_date": "08/15/2023",
+            "filing_type": "AMENDED CERTIFICATE OF FORMATION"
+        },
+        {
+            "filing_number": "0018934877",
+            "filing_date_time": "08/11/2023 11:02:54 AM",
+            "effective_date": "08/14/2023",
+            "filing_type": "INITIAL REPORT"
+        },
+        {
+            "filing_number": "0018934876",
+            "filing_date_time": "08/11/2023 11:02:54 AM",
+            "effective_date": "08/14/2023",
+            "filing_type": "CERTIFICATE OF FORMATION"
+        }
+    ],
+    "name_change_history": []
+}

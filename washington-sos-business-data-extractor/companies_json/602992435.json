@@ -1,0 +1,36 @@
+{
+    "company_name": "A AA ACME BAIL BONDS LLC",
+    "ubi": "602992435",
+    "business_information": {
+        "Business Name": "A AA ACME BAIL BONDS LLC",
+        "UBI Number": "602 992 435",
+        "Business Type": "WA LIMITED LIABILITY COMPANY",
+        "Business Status": "INACTIVE",
+        "Principal Office Street Address": "701 W 11TH ST, VANCOUVER, WA, 98660, UNITED STATES",
+        "Expiration Date": "02/28/2011",
+        "Jurisdiction:\nUNITED STATES, WASHINGTON": "Jurisdiction:\nUNITED STATES, WASHINGTON",
+        "Formation/ Registration Date": "02/05/2010",
+        "Period of Duration": "PERPETUAL",
+        "Inactive Date": "03/25/2011"
+    },
+    "registered_agent": {
+        "name": "THOMAS TLOOS",
+        "street_address": "701 W 11TH ST, VANCOUVER, WA, 98660, UNITED STATES"
+    },
+    "governors": [],
+    "filing_history": [
+        {
+            "filing_number": "0000956219",
+            "filing_date_time": "04/12/2011 12:33:43 PM",
+            "effective_date": "",
+            "filing_type": "CERTIFICATE OF WITHDRAWAL"
+        },
+        {
+            "filing_number": "0000709449",
+            "filing_date_time": "02/18/2010 09:27:31 AM",
+            "effective_date": "",
+            "filing_type": "CERTIFICATE OF FORMATION"
+        }
+    ],
+    "name_change_history": []
+}

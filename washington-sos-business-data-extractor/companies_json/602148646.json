@@ -1,0 +1,123 @@
+{
+    "company_name": "A.A. & J. FINE FINISHES, INC.",
+    "ubi": "602148646",
+    "business_information": {
+        "Business Name": "A.A. & J. FINE FINISHES, INC.",
+        "UBI Number": "602 148 646",
+        "Business Type": "WA PROFIT CORPORATION",
+        "Business Status": "VOLUNTARILY DISSOLVED",
+        "Principal Office Street Address": "2380 POST FALLS, POST FALLS, ID, 83877, UNITED STATES",
+        "Expiration Date": "09/30/2014",
+        "Jurisdiction:\nUNITED STATES, WASHINGTON": "Jurisdiction:\nUNITED STATES, WASHINGTON",
+        "Formation/ Registration Date": "09/12/2001",
+        "Period of Duration": "PERPETUAL",
+        "Inactive Date": "05/09/2014",
+        "Nature of Business": "FINISH CARPENTRY/REMODELING"
+    },
+    "registered_agent": {
+        "name": "ADAM METZGER",
+        "street_address": "LIBERTY LAKE, LIBERTY LAKE, WA, 99019, UNITED STATES"
+    },
+    "governors": [
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "ADAM",
+            "last_name": "METZGER"
+        }
+    ],
+    "filing_history": [
+        {
+            "filing_number": "0001612880",
+            "filing_date_time": "05/13/2014 04:36:59 PM",
+            "effective_date": "05/09/2014",
+            "filing_type": "ARTICLES OF DISSOLUTION"
+        },
+        {
+            "filing_number": "0008101966",
+            "filing_date_time": "08/30/2013 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0007758359",
+            "filing_date_time": "09/11/2012 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0007533899",
+            "filing_date_time": "09/19/2011 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0007120976",
+            "filing_date_time": "08/30/2010 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0006709621",
+            "filing_date_time": "09/11/2009 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0006393925",
+            "filing_date_time": "08/25/2008 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0006060449",
+            "filing_date_time": "08/27/2007 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0005827861",
+            "filing_date_time": "08/28/2006 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0005616005",
+            "filing_date_time": "08/31/2005 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0005477689",
+            "filing_date_time": "08/30/2004 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0005031103",
+            "filing_date_time": "09/04/2003 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0004796833",
+            "filing_date_time": "09/05/2002 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0004244022",
+            "filing_date_time": "11/16/2001 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "INITIAL REPORT"
+        },
+        {
+            "filing_number": "0004249284",
+            "filing_date_time": "09/12/2001 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ARTICLES OF INCORPORATION"
+        }
+    ],
+    "name_change_history": []
+}

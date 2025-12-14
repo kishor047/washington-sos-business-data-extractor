@@ -1,0 +1,342 @@
+{
+    "company_name": "A.A. ANDERSON CO., INC.",
+    "ubi": "371003148",
+    "business_information": {
+        "Business Name": "A.A. ANDERSON CO., INC.",
+        "UBI Number": "371 003 148",
+        "Business Type": "WA PROFIT CORPORATION",
+        "Business Status": "ACTIVE",
+        "Principal Office Street Address": "1409 N FOREST ST, BELLINGHAM, WA, 98225-4504, UNITED STATES",
+        "Principal Office Mailing Address": "1409 N FOREST ST, BELLINGHAM, WA, 98225-4504, UNITED STATES",
+        "Expiration Date": "04/30/2026",
+        "Jurisdiction:\nUNITED STATES, WASHINGTON": "Jurisdiction:\nUNITED STATES, WASHINGTON",
+        "Formation/ Registration Date": "04/06/1976",
+        "Period of Duration": "PERPETUAL",
+        "Nature of Business": "RETAIL, CONSTRUCTION"
+    },
+    "registered_agent": {
+        "name": "SHARON WENDLING",
+        "street_address": "1409 FOREST ST, BELLINGHAM, WA, 98225-0000, UNITED STATES"
+    },
+    "governors": [
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "SHARON",
+            "last_name": "WENDLING"
+        },
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "JEFFREY",
+            "last_name": "WENDLING"
+        },
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "DAVID",
+            "last_name": "WENDLING"
+        },
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "BARRY",
+            "last_name": "WENDLING"
+        }
+    ],
+    "filing_history": [
+        {
+            "filing_number": "0021866328",
+            "filing_date_time": "03/04/2025 09:10:24 AM",
+            "effective_date": "03/04/2025",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0021763662",
+            "filing_date_time": "03/01/2025 04:06:58 AM",
+            "effective_date": "03/01/2025",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0019984964",
+            "filing_date_time": "03/11/2024 11:34:51 AM",
+            "effective_date": "03/11/2024",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0019909678",
+            "filing_date_time": "03/01/2024 05:30:21 AM",
+            "effective_date": "03/01/2024",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0018262300",
+            "filing_date_time": "03/31/2023 03:12:55 PM",
+            "effective_date": "03/31/2023",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0018179090",
+            "filing_date_time": "03/01/2023 08:21:15 PM",
+            "effective_date": "03/01/2023",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0016501466",
+            "filing_date_time": "03/14/2022 10:31:15 AM",
+            "effective_date": "03/14/2022",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0016445722",
+            "filing_date_time": "03/01/2022 12:12:39 PM",
+            "effective_date": "03/01/2022",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0014816018",
+            "filing_date_time": "03/15/2021 11:35:06 AM",
+            "effective_date": "03/15/2021",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0014763000",
+            "filing_date_time": "03/01/2021 05:18:13 AM",
+            "effective_date": "03/01/2021",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0013440246",
+            "filing_date_time": "04/23/2020 04:36:19 PM",
+            "effective_date": "04/23/2020",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0013247298",
+            "filing_date_time": "03/01/2020 06:33:00 AM",
+            "effective_date": "03/01/2020",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0011907174",
+            "filing_date_time": "04/19/2019 12:10:32 PM",
+            "effective_date": "04/19/2019",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0011731857",
+            "filing_date_time": "03/01/2019 07:03:21 AM",
+            "effective_date": "03/01/2019",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0010502419",
+            "filing_date_time": "04/25/2018 10:59:35 AM",
+            "effective_date": "04/25/2018",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0010201317",
+            "filing_date_time": "03/01/2018 06:28:33 AM",
+            "effective_date": "03/01/2018",
+            "filing_type": "ANNUAL REPORT DUE DATE NOTICE"
+        },
+        {
+            "filing_number": "0009402962",
+            "filing_date_time": "04/06/2017 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0009076891",
+            "filing_date_time": "04/07/2016 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0008662649",
+            "filing_date_time": "04/13/2015 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0008254358",
+            "filing_date_time": "03/19/2014 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0008006985",
+            "filing_date_time": "04/04/2013 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0001054640",
+            "filing_date_time": "07/03/2012 04:17:14 PM",
+            "effective_date": "",
+            "filing_type": "AMENDMENT"
+        },
+        {
+            "filing_number": "0007542475",
+            "filing_date_time": "03/26/2012 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0007934075",
+            "filing_date_time": "03/25/2011 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0006888054",
+            "filing_date_time": "03/26/2010 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0006610806",
+            "filing_date_time": "04/23/2009 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0006264875",
+            "filing_date_time": "03/28/2008 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0006004294",
+            "filing_date_time": "03/23/2007 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0005794991",
+            "filing_date_time": "03/30/2006 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0005412493",
+            "filing_date_time": "04/06/2005 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0005152344",
+            "filing_date_time": "03/29/2004 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0005887771",
+            "filing_date_time": "03/29/2003 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0005887770",
+            "filing_date_time": "03/28/2003 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0004476349",
+            "filing_date_time": "03/28/2002 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0004169574",
+            "filing_date_time": "04/16/2001 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003818963",
+            "filing_date_time": "03/31/2000 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003649543",
+            "filing_date_time": "03/29/1999 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003314539",
+            "filing_date_time": "07/30/1985 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "INITIAL REPORT"
+        },
+        {
+            "filing_number": "0003313792",
+            "filing_date_time": "04/15/1985 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003167567",
+            "filing_date_time": "06/15/1983 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003197506",
+            "filing_date_time": "05/25/1982 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003121564",
+            "filing_date_time": "06/05/1981 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003112863",
+            "filing_date_time": "05/19/1980 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003015620",
+            "filing_date_time": "06/18/1979 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003004043",
+            "filing_date_time": "06/14/1978 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003004042",
+            "filing_date_time": "05/05/1978 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003200098",
+            "filing_date_time": "06/03/1977 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ANNUAL REPORT"
+        },
+        {
+            "filing_number": "0003084993",
+            "filing_date_time": "04/06/1976 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "ARTICLES OF INCORPORATION"
+        }
+    ],
+    "name_change_history": []
+}

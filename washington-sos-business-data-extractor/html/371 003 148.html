@@ -1,0 +1,1918 @@
+<html class="fixed js flexbox flexboxlegacy csstransforms csstransforms3d no-overflowscrolling no-mobile-device custom-scroll ng-scope" ng-app="wacorpApp" style=""><!-- fixed sidebar-left-collapsed to fix an issue per TAS --><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <script async="" src="https://www.datadoghq-browser-agent.com/us3/v5/datadog-rum.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7B08VE04WV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7B08VE04WV');
+    </script>
+    <!-- Basic -->
+    <meta charset="UTF-8">
+
+    <title>Corporations and Charities System</title>
+    <meta name="keywords" content="CCFS">
+    <meta name="google" content="notranslate">
+    <meta name="description" content="Washington Corporations and Charities Filing System">
+    <meta name="author" content="pcctg.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Metas   -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Web Fonts  -->
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css">
+    <link rel="stylesheet" href="assets/vendor/morris/morris.css">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/toastr.css" rel="stylesheet">
+    <link href="assets/css/loading-bar.css?version=20251104.2" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/theme.css?version=20251104.2">
+    <link rel="stylesheet" href="assets/css/skins/default.css?version=20251104.2">
+    <link rel="stylesheet" href="assets/css/theme-custom.css">
+    <script src="assets/vendor/modernizr/modernizr.js?version=20251104.2"></script>
+    <link href="assets/css/progress-wizard.min.css" rel="stylesheet">
+    <link href="ng-app/directives/AutoComplete/autocomplete.css" rel="stylesheet">
+    <link href="assets/css/custom.css?version=20251104.2" rel="stylesheet">
+
+    <!--<link href="assets/css/treasure-overlay-spinner.min.css" rel="stylesheet" />-->
+    <style>
+        #loaderDiv {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1100;
+            background-color: white;
+            opacity: .6;
+        }
+
+        .ajax-loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -32px; /* -1 * image width / 2 */
+            margin-top: -32px; /* -1 * image height / 2 */
+            display: block;
+        }
+    </style>
+
+    <script>
+        function printScreen(objreference) {
+            var contents = $(objreference).html();
+            var frame1 = $('<iframe />');
+            frame1[0].name = "frame1";
+            frame1.css({ "position": "absolute", "top": "-1000000px" });
+            $("body").append(frame1);
+            var frameDoc = frame1[0].contentWindow ? frame1[0].contentWindow : frame1[0].contentDocument.document ? frame1[0].contentDocument.document : frame1[0].contentDocument;
+            frameDoc.document.open();
+            //Create a new HTML document.
+            frameDoc.document.write('<html><head><title></title>');
+            frameDoc.document.write('</head><body>');
+            //Append the external CSS file.
+            frameDoc.document.write('<style>.bg-primary{text-align:left;}.div_header {text-transform: uppercase;font-size:22px;padding: 15px 0 4px 0; font-family: "arial";}.alignright{padding-top:6px;} .div_header{border-bottom:1px solid #000; margin-bottom:4px;}</style>');
+            //Append the DIV contents.
+            frameDoc.document.write(contents);
+            frameDoc.document.write('</body></html>');
+            frameDoc.document.close();
+            setTimeout(function () {
+                window.frames["frame1"].focus();
+                window.frames["frame1"].print();
+                frame1.remove();
+            }, 500);
+        }
+    </script>
+    <script src="apiURL.js"></script>
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+
+<body>
+    <script>
+        (function (h, o, u, n, d) {
+            h = h[d] = h[d] || { q: [], onReady: function (c) { h.q.push(c) } }
+            d = o.createElement(u); d.async = 1; d.src = n
+            n = o.getElementsByTagName(u)[0]; n.parentNode.insertBefore(d, n)
+        })(window, document, 'script', 'https://www.datadoghq-browser-agent.com/us3/v5/datadog-rum.js', 'DD_RUM')
+        window.DD_RUM.onReady(function () {
+            window.DD_RUM.init({
+                clientToken: window.aPIURL.clientToken,
+                applicationId: window.aPIURL.applicationId,
+                site: 'us3.datadoghq.com',
+                service: 'ccfs-online',
+                env: window.aPIURL.env + '-ccfs',
+                // Specify a version number to identify the deployed version of your application in Datadog
+                // version: '1.0.0',
+                sessionSampleRate: window.aPIURL.sessionSampleRate,
+                sessionReplaySampleRate: window.aPIURL.sessionReplaySampleRate,
+                trackUserInteractions: true,
+                trackResources: true,
+                trackLongTasks: true,
+                defaultPrivacyLevel: 'mask-user-input',
+                allowedTracingUrls: [window.aPIURL.serviceUrl]
+            });
+        })
+    </script>
+    <div ng-controller="rootController" ng-init="rootInit()" class="ng-scope">
+        <!-- ngInclude: undefined --><ng-include src="masterLayout()" class="ng-scope" style=""><style type="text/css" class="ng-scope">
+    body {
+        background: #fff !important;
+    }
+</style>
+
+<!-- start: page -->
+
+<!-- ngView:  --><div ng-view="" class="ng-scope"><section class="content-body2 ng-scope">
+    <!-- ngInclude: undefined --><ng-include src="'ng-app/view/layout/topBar.html'" class="ng-scope"><!-- start: header -->
+
+<header class="header ng-scope">
+    <div class="logo-container">
+        <div class="logo">
+            <a ng-click="redirect();"><img class="pull-left" src="assets/images/seal.png" alt="Washington" height="54" title="Dashboard"></a>
+            <div class="col-md-6">
+                <h3>Corporations and Charities Filing System</h3>
+            </div>
+
+            <div class="col-md-4 right-label">
+                <!-- TFS#2607; revamped banner; JS below determines visibility, content -->
+                <br>
+                <label id="lblDebugBanner" style="color:red; font-size:x-large;font-weight:bold"></label>
+            </div>
+           
+        </div>
+        <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+            <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+        </div>
+    </div>
+
+    <!-- start: search & user box -->
+    <div class="header-right ng-hide" ng-show="userData.isUserLoggedIn">
+
+        <!--<span class="separator"></span>-->
+
+        <div id="userbox" class="userbox">
+            <div class="cart"><a ng-href="#/shoppingCart" title="Shopping Cart" href="#/shoppingCart"><i class="fa fa-shopping-cart"></i></a></div>
+            <div data-toggle="dropdown">
+                <div class="profile-info">
+                    <span class="name">Welcome!</span>
+                    <span class="role ng-binding"></span>
+                </div>
+                <span style="cursor: pointer" role="menuitem" tabindex="-1" ng-click="logout();" class="name logout" href="#"><i class="fa fa-power-off name"></i> Logout</span>
+            </div>
+
+            <div class="dropdown-menu">
+                <ul class="list-unstyled">
+                    <li class="divider">
+                        <a role="menuitem" tabindex="-1" ng-click="navChangeAccount();"><i class="fa fa-power-off"></i> Change Account Details</a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end: search & user box -->
+</header>
+
+<!-- end: header -->
+
+<!-- TFS#2607; add banners that will change automatically with host (server/connection) name -->
+<script type="text/javascript" class="ng-scope">
+    $(function () {
+        var xxx = window.location.hostname;
+        
+        if (xxx.indexOf("ccfs.sos") != -1) {
+            $('#debugBanner').css('visibility', 'hidden');
+        } else if (xxx.indexOf('ts-ccfs') != -1) {
+            $('#debugBanner').css('visibility', 'visible');
+            $('#lblDebugBanner').html("* P R E - P R O D *");
+        } else if (xxx.indexOf("localhost") != -1) {
+            $('#debugBanner').css('visibility', 'visible');
+            $('#lblDebugBanner').html("* L O C A L *");
+        }
+    });
+</script></ng-include>
+    <div class="inner-wrapper">
+        <header class="page-header">
+            <h2>Business Information</h2>
+        </header>
+        <div class="ng-scope" ng-init="initBusinessSearch()" id="divmain">
+            <div class="panel-body" id="divBusinessInformation">
+                <div class="div_header">Business Information</div>
+                <div class="row-margin">
+                    <div class="row">
+                        <div class="col-md-3 alignright">
+                            Business Name:
+                        </div>
+                        <!-- ngIf: businessInfo.BusinessType.indexOf('FOREIGN')>-1 -->
+                        <!-- ngIf: !(businessInfo.BusinessType.indexOf('FOREIGN')>-1) --><div class="col-md-3 ng-scope" data-ng-if="!(businessInfo.BusinessType.indexOf('FOREIGN')&gt;-1)">
+                            <strong data-ng-bind="businessInfo.BusinessName" class="ng-binding">A.A. ANDERSON CO., INC.</strong>
+                        </div><!-- end ngIf: !(businessInfo.BusinessType.indexOf('FOREIGN')>-1) -->
+                        <div class="col-md-3 alignright">
+                            UBI Number:
+                        </div>
+                        <div class="col-md-3">
+                            <strong data-ng-bind="businessInfo.UBINumber" class="ng-binding">371 003 148</strong>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 alignright">
+                            Business Type:
+                        </div>
+                        <div class="col-md-3">
+                            <strong data-ng-bind="businessInfo.BusinessType" class="ng-binding">WA PROFIT CORPORATION</strong>
+                        </div>
+
+                        <div class="col-md-3 alignright">
+                            Business Status:
+                        </div>
+                        <div class="col-md-3">
+                            <strong data-ng-bind="businessInfo.BusinessStatus | uppercase" class="ng-binding">ACTIVE</strong>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 alignright">
+                            Principal Office Street Address:
+                        </div>
+                        <div class="col-md-3">
+                            <strong data-ng-bind="businessInfo.PrincipalOffice.PrincipalStreetAddress.StreetAddress1==''?'':businessInfo.PrincipalOffice.PrincipalStreetAddress.FullAddress" class="ng-binding">1409 N FOREST ST, BELLINGHAM, WA, 98225-4504, UNITED STATES</strong>
+                        </div>
+                        <div class="col-md-3 alignright">
+                            Principal Office Mailing Address:
+                        </div>
+                        <div class="col-md-3">
+                            <strong data-ng-bind="(businessInfo.PrincipalOffice.PrincipalMailingAddress.StreetAddress1!='' || businessInfo.PrincipalOffice.PrincipalMailingAddress.Zip5!='')?businessInfo.PrincipalOffice.PrincipalMailingAddress.FullAddress:''" class="ng-binding">1409 N FOREST ST, BELLINGHAM, WA, 98225-4504, UNITED STATES</strong>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 alignright">
+                            Expiration Date:
+                        </div>
+                        <!-- ngIf: (businessInfo.BusinessType | uppercase)== 'NAME RESERVATION' || (businessInfo.BusinessType | uppercase)== 'FOREIGN NAME REGISTRATION' -->
+                        <!-- ngIf: (businessInfo.BusinessCategory | uppercase)== 'MISCELLANEOUS FILING' -->
+                        <!-- ngIf: (businessInfo.BusinessType | uppercase)!= 'NAME RESERVATION' && (businessInfo.BusinessType | uppercase)!= 'FOREIGN NAME REGISTRATION' && (businessInfo.BusinessCategory | uppercase)!= 'MISCELLANEOUS FILING' --><div class="col-md-3 ng-scope" data-ng-if="(businessInfo.BusinessType | uppercase)!= 'NAME RESERVATION' &amp;&amp; (businessInfo.BusinessType | uppercase)!= 'FOREIGN NAME REGISTRATION' &amp;&amp; (businessInfo.BusinessCategory | uppercase)!= 'MISCELLANEOUS FILING'">
+                            <strong data-ng-bind="(businessInfo.NextARDueDate | date:'MM/dd/yyyy')=='01/01/0001'?'':businessInfo.NextARDueDate|date:'MM/dd/yyyy'" class="ng-binding">04/30/2026</strong>
+                        </div><!-- end ngIf: (businessInfo.BusinessType | uppercase)!= 'NAME RESERVATION' && (businessInfo.BusinessType | uppercase)!= 'FOREIGN NAME REGISTRATION' && (businessInfo.BusinessCategory | uppercase)!= 'MISCELLANEOUS FILING' -->
+                        <!-- ngIf: businessInfo.BusinessType != null --><div data-ng-if="businessInfo.BusinessType != null" class="ng-scope">
+                            <!-- ngIf: businessInfo.BusinessType.indexOf('FOREIGN') >= 0 -->
+                            <!-- ngIf: businessInfo.BusinessType.indexOf('WA') >= 0 --><div data-ng-if="businessInfo.BusinessType.indexOf('WA') &gt;= 0" class="ng-scope">
+                                <div class="col-md-3 alignright">
+                                    Jurisdiction:
+                                </div>
+                                <div class="col-md-3">
+                                    <strong data-ng-bind="(businessInfo.JurisdictionCategory == 'S' || businessInfo.JurisdictionCategory == '' || businessInfo.JurisdictionCategory == null) ? 'UNITED STATES, ' + ((businessInfo.JurisdictionDesc==''||businessInfo.JurisdictionDesc==null)?'WASHINGTON':businessInfo.JurisdictionDesc):businessInfo.JurisdictionDesc" class="ng-binding">UNITED STATES, WASHINGTON</strong>
+                                </div>
+                            </div><!-- end ngIf: businessInfo.BusinessType.indexOf('WA') >= 0 -->
+                        </div><!-- end ngIf: businessInfo.BusinessType != null -->
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 alignright">
+                            Formation/ Registration Date:
+                        </div>
+                        <div class="col-md-3">
+                            <strong data-ng-bind="(businessInfo.DateOfIncorporation | date:'MM/dd/yyyy')=='01/01/0001'?'':businessInfo.DateOfIncorporation| date:'MM/dd/yyyy'" class="ng-binding">04/06/1976</strong>
+                        </div>
+
+                        <div class="col-md-3 alignright">
+                            Period of Duration:
+                        </div>
+                        <div class="col-md-3">
+                            <strong ng-bind="(businessInfo.DurationExpireDate| date:'MM/dd/yyyy')=='01/01/0001' || businessInfo.DurationExpireDate==null|| businessInfo.DurationExpireDate==''?'PERPETUAL':businessInfo.DurationExpireDate| date:'MM/dd/yyyy'" class="ng-binding">PERPETUAL</strong>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 alignright">
+                            Inactive Date:
+                        </div>
+                        <div class="col-md-3">
+                            <strong data-ng-bind="(businessInfo.InActiveDate | date:'MM/dd/yyyy')=='01/01/0001'?'':businessInfo.InActiveDate| date:'MM/dd/yyyy'" class="ng-binding"></strong>
+                        </div>
+                        <div class="col-md-3 alignright">
+                            Nature of Business:
+                        </div>
+                        <div class="col-md-3">
+                            <!-- ngIf: businessInfo.BINAICSCodeDesc --><div ng-if="businessInfo.BINAICSCodeDesc" class="ng-scope">
+                                <strong style="word-wrap:break-word;" ng-bind="businessInfo.BINAICSCodeDesc | uppercase" class="ng-binding"> RETAIL, CONSTRUCTION</strong>
+                            </div><!-- end ngIf: businessInfo.BINAICSCodeDesc -->
+                        </div>
+                    </div>
+
+                    <!--for 13.7 adding additional flags GT-->
+                    <div class="row">
+                        <!-- ngIf: businessInfo.BusinessType != null --><div data-ng-if="businessInfo.BusinessType != null" class="ng-scope">
+                            <!-- ngIf: businessInfo.BusinessType.indexOf('NONPROFIT') >= 0 -->
+                        </div><!-- end ngIf: businessInfo.BusinessType != null -->
+                    </div>
+                    <!--ends here-->
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+            <!-- ngIf: businessInfo.BusinessTypeID!=47 && businessInfo.BusinessTypeID!=25 && businessInfo.BusinessTypeID!=43 --><div ng-if="businessInfo.BusinessTypeID!=47 &amp;&amp; businessInfo.BusinessTypeID!=25 &amp;&amp; businessInfo.BusinessTypeID!=43" class="ng-scope">
+                <!--47=NameReservation,25=ForeignNameRegistration-->
+                <div class="div_header"> Registered Agent Information</div>
+                <div class="row-margin">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-md-5 alignright">
+                                <!--<span data-ng-if="businessInfo.Agent.AgentType=='I'">
+                                Name:
+                            </span>
+                            <span data-ng-if="businessInfo.Agent.AgentType=='E'">
+                                Entity Name:
+                            </span>
+                            <span data-ng-if="businessInfo.Agent.AgentType=='O'">
+                                Office or Position:
+                            </span>-->
+                                <span>
+                                    Registered Agent Name:
+                                </span>
+                            </div>
+                            <!--<br />-->
+                            <div class="col-md-7">
+                                <!-- ngIf: businessInfo.Agent.AgentType=='I' -->
+                                <!-- ngIf: businessInfo.Agent.AgentType=='E' || businessInfo.Agent.AgentType=='O' --><b data-ng-if="businessInfo.Agent.AgentType=='E' || businessInfo.Agent.AgentType=='O'" class="ng-binding ng-scope">SHARON WENDLING</b><!-- end ngIf: businessInfo.Agent.AgentType=='E' || businessInfo.Agent.AgentType=='O' -->
+                            </div>
+                        </div>
+                        <!--<div class="col-md-6" ng-show="businessInfo.Agent.AgentType=='E'">
+                        <div class="col-md-4 alignright">Entity Name:</div>
+                        <div class="col-md-8"> <b>{{ businessInfo.Agent.EntityName}}</b></div>
+                    </div>-->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-md-5 alignright">Street Address:</div>
+                            <div class="col-md-7"> <strong data-ng-bind="businessInfo.Agent.StreetAddress.FullAddress | uppercase" class="ng-binding">1409 FOREST ST, BELLINGHAM, WA, 98225-0000, UNITED STATES</strong></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="col-md-5 alignright">Mailing Address:</div>
+                                <div class="col-md-7"> <strong data-ng-bind="businessInfo.Agent.MailingAddress.FullAddress | uppercase" class="ng-binding"></strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div><!-- end ngIf: businessInfo.BusinessTypeID!=47 && businessInfo.BusinessTypeID!=25 && businessInfo.BusinessTypeID!=43 -->
+            <!-- ngIf: businessInfo.BusinessTypeID==47 || businessInfo.BusinessTypeID==25 -->
+
+            <!--- Incorporator -->
+            <!--- Wa Profit Corporation, Wa Professional Service Corporation, Wa Social Purpose Corporation, Wa Non profit Corporation, Wa Non profit Professional Service Corporation -->
+            <!--<div ng-if="businessInfo.PrincipalsList.length > 0 && incorporatorCount">
+            <div data-ng-if="businessInfo.BusinessTypeID==86 || businessInfo.BusinessTypeID==85 || businessInfo.BusinessTypeID==90 || businessInfo.BusinessTypeID==73 || businessInfo.BusinessTypeID==74 ">
+                <div data-principal data-modal-name="'Incorporator'" data-section-name="'Incorporators'" data-note="false" data-principal-list="businessInfo.PrincipalsList"
+                     data-ng-model="businessInfo.PrincipalsList" data-is-review="true" data-is-formation="true"></div>
+            </div>
+        </div>-->
+            <!---  Executor -->
+            <!---  Wa Limited Liability Company, Wa Professional Limited Liability Company -->
+            <!--<div ng-if="businessInfo.PrincipalsList.length > 0 && executorCount">
+            <div data-ng-if="businessInfo.BusinessTypeID==65 || businessInfo.BusinessTypeID==79">
+                <div data-principal data-modal-name="'Executor'" data-section-name="'Executors'" data-note="false" data-principal-list="businessInfo.PrincipalsList"
+                     data-ng-model="businessInfo.PrincipalsList" data-is-review="true" data-is-formation="true"></div>
+            </div>
+        </div>-->
+            <!--- General Partner -->
+            <!---  Wa Limited Partnership, Wa Professional Limited Partnership, Wa Limited Liability Limited Partnership, Wa Professional Limited Liability Limited Partnership -->
+            <!--<div ng-if="businessInfo.PrincipalsList.length > 0 && generalPartnerCount">
+            <div data-ng-if="businessInfo.BusinessTypeID==69 || businessInfo.BusinessTypeID==77 || businessInfo.BusinessTypeID==67 || businessInfo.BusinessTypeID==75">
+                <div data-principal data-modal-name="'GeneralPartner'" data-section-name="'General Partners'" data-note="false" data-principal-list="businessInfo.PrincipalsList"
+                     data-ng-model="businessInfo.PrincipalsList" data-is-review="true" data-is-formation="true"></div>
+            </div>
+        </div>-->
+            <!-- Initial Board of Directors -->
+            <!--- Wa Non profit Corporation, Wa Non profit Professional Service Corporation -->
+            <!--<div ng-if="businessInfo.PrincipalsList.length > 0 && initialBoardOfDirectorCount">
+            <div data-ng-if="businessInfo.BusinessTypeID==73 || businessInfo.BusinessTypeID==74 ">
+                <div data-principal data-modal-name="'InitialBoardOfDirector'" data-section-name="'Initial Board of Directors'" data-note="false" data-principal-list="businessInfo.PrincipalsList"
+                     data-ng-model="businessInfo.PrincipalsList" data-is-review="true" data-is-formation="true"></div>
+            </div>
+        </div>-->
+
+            <!-- ngIf: businessInfo.PrincipalsList.length > 0 --><div ng-if="businessInfo.PrincipalsList.length &gt; 0" class="ng-scope">
+                <div data-principal="" data-modal-name="'GoverningPerson'" data-section-name="'Governors'" data-note="false" data-principal-list="businessInfo.PrincipalsList" data-ng-model="businessInfo.PrincipalsList" data-is-review="true" data-is-formation="true" class="ng-pristine ng-untouched ng-valid ng-isolate-scope"><ng-form name="Principals" class="formClass ng-pristine ng-valid" novalidate="">
+    <div class="ng-scope">
+        <div class="div_pdf_header_font div_header ng-binding" data-ng-bind="sectionName">Governors</div>
+        <div class="row-margin">
+            <!-- ngIf: !isReview -->
+            <!-- ngIf: isReview --><div class="row table-responsive table-striped div_pdf_body_font ng-scope" data-ng-if="isReview">
+                <table style="width:100%" border="0" cellpadding="4" cellspacing="0" class="table table-responsive table-striped div_pdf_body_font">
+                    <thead>
+                        <tr align="center" class="bg-primary text-center div_pdf_body_font">
+                            <th>Title</th>
+                            <!-- ngIf: isFormation --><th data-ng-if="isFormation" class="ng-scope"> <span data-ng-bind="sectionName" class="ng-binding">Governors</span> Type</th><!-- end ngIf: isFormation --> <!-- FRD Requirement-->
+                            <!-- ngIf: !isFormation -->
+                            <th>Entity Name</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <!--<th>Title</th>-->
+                            <!--<th data-ng-if="sectionName!='Governors' && isFormation">Address</th>-->
+                            <!-- ngIf: isFormation&&sectionName!='Governors' -->
+                        </tr>
+                    </thead>
+                    <!-- ngRepeat: incor in principalList --><tbody data-ng-repeat="incor in principalList" class="ng-scope">
+                        <!-- ngIf: isFormation && incor.PrincipalBaseType.toUpperCase() == modalName.toUpperCase() && incor.Status != 'D' --><tr align="left" class="bgwhite div_pdf_body_font ng-scope" data-ng-if="isFormation &amp;&amp; incor.PrincipalBaseType.toUpperCase() == modalName.toUpperCase() &amp;&amp; incor.Status != 'D'">
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON' --><td data-ng-if="incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON'" class="ng-scope">
+                                GOVERNOR
+                            </td><!-- end ngIf: incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON' -->
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() == 'INITIALBOARDOFDIRECTOR' -->
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() == 'GENERALPARTNER' -->
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() != 'GOVERNINGPERSON' && incor.PrincipalBaseType.toUpperCase() != 'INITIALBOARDOFDIRECTOR' && incor.PrincipalBaseType.toUpperCase() != 'GENERALPARTNER' -->
+                            <td><span data-ng-bind="incor.TypeID=='E'?'ENTITY':'INDIVIDUAL'" class="ng-binding">INDIVIDUAL</span></td><!-- FRD Requirement-->
+                            <td><span data-ng-bind="incor.Name==null || incor.Name==''?'':incor.Name  | uppercase" class="ng-binding"></span></td>
+                            <td><span data-ng-bind="incor.FirstName  | uppercase" class="ng-binding">SHARON</span></td>
+                            <td><span data-ng-bind="incor.LastName  | uppercase" class="ng-binding">WENDLING</span></td>
+                            <!--<td><span data-ng-bind="incor.Title"></span></td>-->  <!-- As per FRD Changes -->
+                            <!-- ngIf: !(sectionName=='Governors') -->
+                        </tr><!-- end ngIf: isFormation && incor.PrincipalBaseType.toUpperCase() == modalName.toUpperCase() && incor.Status != 'D' -->
+                        <!-- ngIf: (!isFormation) && incor.Status != 'D'&&incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON' -->
+                    </tbody><!-- end ngRepeat: incor in principalList --><tbody data-ng-repeat="incor in principalList" class="ng-scope">
+                        <!-- ngIf: isFormation && incor.PrincipalBaseType.toUpperCase() == modalName.toUpperCase() && incor.Status != 'D' --><tr align="left" class="bgwhite div_pdf_body_font ng-scope" data-ng-if="isFormation &amp;&amp; incor.PrincipalBaseType.toUpperCase() == modalName.toUpperCase() &amp;&amp; incor.Status != 'D'">
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON' --><td data-ng-if="incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON'" class="ng-scope">
+                                GOVERNOR
+                            </td><!-- end ngIf: incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON' -->
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() == 'INITIALBOARDOFDIRECTOR' -->
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() == 'GENERALPARTNER' -->
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() != 'GOVERNINGPERSON' && incor.PrincipalBaseType.toUpperCase() != 'INITIALBOARDOFDIRECTOR' && incor.PrincipalBaseType.toUpperCase() != 'GENERALPARTNER' -->
+                            <td><span data-ng-bind="incor.TypeID=='E'?'ENTITY':'INDIVIDUAL'" class="ng-binding">INDIVIDUAL</span></td><!-- FRD Requirement-->
+                            <td><span data-ng-bind="incor.Name==null || incor.Name==''?'':incor.Name  | uppercase" class="ng-binding"></span></td>
+                            <td><span data-ng-bind="incor.FirstName  | uppercase" class="ng-binding">JEFFREY</span></td>
+                            <td><span data-ng-bind="incor.LastName  | uppercase" class="ng-binding">WENDLING</span></td>
+                            <!--<td><span data-ng-bind="incor.Title"></span></td>-->  <!-- As per FRD Changes -->
+                            <!-- ngIf: !(sectionName=='Governors') -->
+                        </tr><!-- end ngIf: isFormation && incor.PrincipalBaseType.toUpperCase() == modalName.toUpperCase() && incor.Status != 'D' -->
+                        <!-- ngIf: (!isFormation) && incor.Status != 'D'&&incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON' -->
+                    </tbody><!-- end ngRepeat: incor in principalList --><tbody data-ng-repeat="incor in principalList" class="ng-scope">
+                        <!-- ngIf: isFormation && incor.PrincipalBaseType.toUpperCase() == modalName.toUpperCase() && incor.Status != 'D' --><tr align="left" class="bgwhite div_pdf_body_font ng-scope" data-ng-if="isFormation &amp;&amp; incor.PrincipalBaseType.toUpperCase() == modalName.toUpperCase() &amp;&amp; incor.Status != 'D'">
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON' --><td data-ng-if="incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON'" class="ng-scope">
+                                GOVERNOR
+                            </td><!-- end ngIf: incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON' -->
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() == 'INITIALBOARDOFDIRECTOR' -->
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() == 'GENERALPARTNER' -->
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() != 'GOVERNINGPERSON' && incor.PrincipalBaseType.toUpperCase() != 'INITIALBOARDOFDIRECTOR' && incor.PrincipalBaseType.toUpperCase() != 'GENERALPARTNER' -->
+                            <td><span data-ng-bind="incor.TypeID=='E'?'ENTITY':'INDIVIDUAL'" class="ng-binding">INDIVIDUAL</span></td><!-- FRD Requirement-->
+                            <td><span data-ng-bind="incor.Name==null || incor.Name==''?'':incor.Name  | uppercase" class="ng-binding"></span></td>
+                            <td><span data-ng-bind="incor.FirstName  | uppercase" class="ng-binding">DAVID</span></td>
+                            <td><span data-ng-bind="incor.LastName  | uppercase" class="ng-binding">WENDLING</span></td>
+                            <!--<td><span data-ng-bind="incor.Title"></span></td>-->  <!-- As per FRD Changes -->
+                            <!-- ngIf: !(sectionName=='Governors') -->
+                        </tr><!-- end ngIf: isFormation && incor.PrincipalBaseType.toUpperCase() == modalName.toUpperCase() && incor.Status != 'D' -->
+                        <!-- ngIf: (!isFormation) && incor.Status != 'D'&&incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON' -->
+                    </tbody><!-- end ngRepeat: incor in principalList --><tbody data-ng-repeat="incor in principalList" class="ng-scope">
+                        <!-- ngIf: isFormation && incor.PrincipalBaseType.toUpperCase() == modalName.toUpperCase() && incor.Status != 'D' --><tr align="left" class="bgwhite div_pdf_body_font ng-scope" data-ng-if="isFormation &amp;&amp; incor.PrincipalBaseType.toUpperCase() == modalName.toUpperCase() &amp;&amp; incor.Status != 'D'">
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON' --><td data-ng-if="incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON'" class="ng-scope">
+                                GOVERNOR
+                            </td><!-- end ngIf: incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON' -->
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() == 'INITIALBOARDOFDIRECTOR' -->
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() == 'GENERALPARTNER' -->
+                            <!-- ngIf: incor.PrincipalBaseType.toUpperCase() != 'GOVERNINGPERSON' && incor.PrincipalBaseType.toUpperCase() != 'INITIALBOARDOFDIRECTOR' && incor.PrincipalBaseType.toUpperCase() != 'GENERALPARTNER' -->
+                            <td><span data-ng-bind="incor.TypeID=='E'?'ENTITY':'INDIVIDUAL'" class="ng-binding">INDIVIDUAL</span></td><!-- FRD Requirement-->
+                            <td><span data-ng-bind="incor.Name==null || incor.Name==''?'':incor.Name  | uppercase" class="ng-binding"></span></td>
+                            <td><span data-ng-bind="incor.FirstName  | uppercase" class="ng-binding">BARRY</span></td>
+                            <td><span data-ng-bind="incor.LastName  | uppercase" class="ng-binding">WENDLING</span></td>
+                            <!--<td><span data-ng-bind="incor.Title"></span></td>-->  <!-- As per FRD Changes -->
+                            <!-- ngIf: !(sectionName=='Governors') -->
+                        </tr><!-- end ngIf: isFormation && incor.PrincipalBaseType.toUpperCase() == modalName.toUpperCase() && incor.Status != 'D' -->
+                        <!-- ngIf: (!isFormation) && incor.Status != 'D'&&incor.PrincipalBaseType.toUpperCase() == 'GOVERNINGPERSON' -->
+                    </tbody><!-- end ngRepeat: incor in principalList -->
+                </table>
+            </div><!-- end ngIf: isReview -->
+        </div>
+    </div>
+</ng-form>
+</div>
+            </div><!-- end ngIf: businessInfo.PrincipalsList.length > 0 -->
+
+        </div>
+        <div>
+            <cf-turnstile class="ng-isolate-scope"><!-- ngIf: isTurnstileEnable --><div class="cf-turnstile ng-scope" ng-if="isTurnstileEnable"><div><input type="hidden" name="cf-turnstile-response" id="cf-chl-widget-99l6x_response" value="0.sumOkBivHVJnPJprqoo-Kr5aoCLjUp4tnN_jBOTCsG8mrbFhIm4cI5G7pYDVViERuPpco2xlA7KH82EpGP3bBu9243wuVAJSTrvi_KiP7IrmX-1DCQGiJLNSwKBjR-z2X7ZbaCyDIfo9y1HwrgtGeOocWsGfHmECcsaimhLmlgj7__wVPbMrhMKfXNcIKv9T54TPc6A1QiC4kkOcnVWkCERrY-sm71DBsFvRj4lPwKRcrL6idT_eF-LPUtLOFDLDDFNExQqkbplyShEqV7JwMVYBhhvZ5Tv8zuWgkRxP2nvjR1oS3Bi-CTfKziZZGa0ftOp6QjKZKanQ_mPxm2-YoMnI0JFauzj_dCO1MO784Ku_Z5x3J2qLLsg7BSoUcDu5J1bkUdcr4-HqdumWS9aLeSn2tVkhIfawq-noLPQgE1w8NgEe-g9ra7GRkLAEoK-HSsBN61MYLtf81JyzZu25VpGvjWpewrA9qo0mFkDzO_BstI2IofBOIPiBomVdqBClr2tsu5dv3Z19JO40h9uQc-GXjQspTMmK8gJ7PUSrLe_bZuRIz_7CemgU7-1_D7Riz1egQMShz2AHW4dYJ_5zXAkF4WFcmcTQqn2xGM1xiF003_osMYZkK5t0UqfVDXwcR615D5kQ7-ssFyvSypKsYBY-RpTKra50hARavIc6XrhnxO48UjNbnHVaMrf0__Hzol9qAdDvxB31XqcjE29vpxZAdlwrza4YkWA-R2oQb5xmigeIR5fX68Cm-zzhLlt4bop5-_83Vxvt9RW9qecXSayN5_YOdovZAsKdpy8HytDfvDUV5eaklGqGj-fP_6Xb6c322ykr6gOsTEUr5jOwBnQbDS2kBc6x-e9EnM2sTkOEg0FNP4Sb4a63Gk8NHp7_RdHabXY3jh3vmXXUcNWKJMzOl7NXPqlb50XeBRsHmg00cr104uufNhfhviNFQYFJr52xd772204nzYrJBuPe1A.EgyrnahEW_ts5uqOGlJ2pQ.0fe273b9aefc82ed37eaf746cc4481efafaca06ff305a239f33d8d07ac6288d3"></div></div><!-- end ngIf: isTurnstileEnable --></cf-turnstile>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-2" data-ng-hide="isBackButtonHide">
+                <button ng-click="navBusinessSearch();" class="btn btnbgclr btn-md btn-back ng-scope">Back</button>
+            </div>
+            <!-- ngIf: isBackButtonHide -->
+            <div class="col-md-10 button">
+                <input type="button" id="btnFilingHistory" class="btn btn-success" value="Filing History" ng-click="navBusinessFilings()">
+                <input type="button" id="btnNameHistory" class="btn btn-success" value="Name History" ng-click="navBusinessNameHistory()">
+                <input type="button" id="btnPrint" class="btn btn-success" value="Print" onclick="printScreen('#divmain')">
+                <input type="button" id="btnReturnToSearch" class="btn btn-brown" value="Return to Business Search" data-ng-hide="isBackButtonHide" ng-click="businesssearchType=='AdvancedSearch'?navAdvancedSearch():(userData.isUserLoggedIn?navCorporationSearch():navHome())">
+                <!--<input type="button" id="btnNameHistory" class="btn btn-success" value="Name History" onclick="submitFormNameHistory(@Model.BusinessID)">
+            <input type="button" id="btnReturnToSearch" class="btn btn-brown" value="Return to Business Search" onclick="window.location.href='@Url.Action(" index", "BusinessSearch" )'">-->
+            </div>
+            <!--<div class="col-md-6 alignright">
+            <input type="button" id="btnReturnToSearch" class="btn btn-brown" value="Return to Business Search" ng-click="businesssearchType=='AdvancedSearch'?navAdvancedSearch():(userData.isUserLoggedIn?navCorporationSearch():navHome())">
+        </div>-->
+        </div>
+    </div>
+</section>
+</div>
+
+
+
+<!-- end: page --></ng-include>
+    </div>
+
+    <script type="text/javascript" src="bundles/vendor-js?version=20251104.2"></script>
+    <link href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet">
+    <!-- application -->
+
+    <script type="text/javascript" src="bundles/ccfs-js?version=20251104.2"></script>
+
+    <link href="assets/css/ngDialog.min.css" rel="stylesheet">
+    <link href="assets/css/ngDialog-theme-default.min.css" rel="stylesheet">
+    <link href="assets/css/ngDialog-theme-plain.min.css" rel="stylesheet">
+
+    <!--<div id="loaderDiv" loader><img src="/assets/images/ajax-loader.gif" class="ajax-loader" /></div>-->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer=""></script>
+
+</body></html><html class="fixed js flexbox flexboxlegacy csstransforms csstransforms3d no-overflowscrolling no-mobile-device custom-scroll ng-scope" ng-app="wacorpApp" style=""><!-- fixed sidebar-left-collapsed to fix an issue per TAS --><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <script async="" src="https://www.datadoghq-browser-agent.com/us3/v5/datadog-rum.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7B08VE04WV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7B08VE04WV');
+    </script>
+    <!-- Basic -->
+    <meta charset="UTF-8">
+
+    <title>Corporations and Charities System</title>
+    <meta name="keywords" content="CCFS">
+    <meta name="google" content="notranslate">
+    <meta name="description" content="Washington Corporations and Charities Filing System">
+    <meta name="author" content="pcctg.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Metas   -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Web Fonts  -->
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css">
+    <link rel="stylesheet" href="assets/vendor/morris/morris.css">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/toastr.css" rel="stylesheet">
+    <link href="assets/css/loading-bar.css?version=20251104.2" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/theme.css?version=20251104.2">
+    <link rel="stylesheet" href="assets/css/skins/default.css?version=20251104.2">
+    <link rel="stylesheet" href="assets/css/theme-custom.css">
+    <script src="assets/vendor/modernizr/modernizr.js?version=20251104.2"></script>
+    <link href="assets/css/progress-wizard.min.css" rel="stylesheet">
+    <link href="ng-app/directives/AutoComplete/autocomplete.css" rel="stylesheet">
+    <link href="assets/css/custom.css?version=20251104.2" rel="stylesheet">
+
+    <!--<link href="assets/css/treasure-overlay-spinner.min.css" rel="stylesheet" />-->
+    <style>
+        #loaderDiv {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1100;
+            background-color: white;
+            opacity: .6;
+        }
+
+        .ajax-loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -32px; /* -1 * image width / 2 */
+            margin-top: -32px; /* -1 * image height / 2 */
+            display: block;
+        }
+    </style>
+
+    <script>
+        function printScreen(objreference) {
+            var contents = $(objreference).html();
+            var frame1 = $('<iframe />');
+            frame1[0].name = "frame1";
+            frame1.css({ "position": "absolute", "top": "-1000000px" });
+            $("body").append(frame1);
+            var frameDoc = frame1[0].contentWindow ? frame1[0].contentWindow : frame1[0].contentDocument.document ? frame1[0].contentDocument.document : frame1[0].contentDocument;
+            frameDoc.document.open();
+            //Create a new HTML document.
+            frameDoc.document.write('<html><head><title></title>');
+            frameDoc.document.write('</head><body>');
+            //Append the external CSS file.
+            frameDoc.document.write('<style>.bg-primary{text-align:left;}.div_header {text-transform: uppercase;font-size:22px;padding: 15px 0 4px 0; font-family: "arial";}.alignright{padding-top:6px;} .div_header{border-bottom:1px solid #000; margin-bottom:4px;}</style>');
+            //Append the DIV contents.
+            frameDoc.document.write(contents);
+            frameDoc.document.write('</body></html>');
+            frameDoc.document.close();
+            setTimeout(function () {
+                window.frames["frame1"].focus();
+                window.frames["frame1"].print();
+                frame1.remove();
+            }, 500);
+        }
+    </script>
+    <script src="apiURL.js"></script>
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+
+<body>
+    <script>
+        (function (h, o, u, n, d) {
+            h = h[d] = h[d] || { q: [], onReady: function (c) { h.q.push(c) } }
+            d = o.createElement(u); d.async = 1; d.src = n
+            n = o.getElementsByTagName(u)[0]; n.parentNode.insertBefore(d, n)
+        })(window, document, 'script', 'https://www.datadoghq-browser-agent.com/us3/v5/datadog-rum.js', 'DD_RUM')
+        window.DD_RUM.onReady(function () {
+            window.DD_RUM.init({
+                clientToken: window.aPIURL.clientToken,
+                applicationId: window.aPIURL.applicationId,
+                site: 'us3.datadoghq.com',
+                service: 'ccfs-online',
+                env: window.aPIURL.env + '-ccfs',
+                // Specify a version number to identify the deployed version of your application in Datadog
+                // version: '1.0.0',
+                sessionSampleRate: window.aPIURL.sessionSampleRate,
+                sessionReplaySampleRate: window.aPIURL.sessionReplaySampleRate,
+                trackUserInteractions: true,
+                trackResources: true,
+                trackLongTasks: true,
+                defaultPrivacyLevel: 'mask-user-input',
+                allowedTracingUrls: [window.aPIURL.serviceUrl]
+            });
+        })
+    </script>
+    <div ng-controller="rootController" ng-init="rootInit()" class="ng-scope">
+        <!-- ngInclude: undefined --><ng-include src="masterLayout()" class="ng-scope" style=""><style type="text/css" class="ng-scope">
+    body {
+        background: #fff !important;
+    }
+</style>
+
+<!-- start: page -->
+
+<!-- ngView:  --><div ng-view="" class="ng-scope"><section class="content-body2 ng-scope">
+    <!-- ngInclude: undefined --><ng-include src="'ng-app/view/layout/topBar.html'" class="ng-scope"><!-- start: header -->
+
+<header class="header ng-scope">
+    <div class="logo-container">
+        <div class="logo">
+            <a ng-click="redirect();"><img class="pull-left" src="assets/images/seal.png" alt="Washington" height="54" title="Dashboard"></a>
+            <div class="col-md-6">
+                <h3>Corporations and Charities Filing System</h3>
+            </div>
+
+            <div class="col-md-4 right-label">
+                <!-- TFS#2607; revamped banner; JS below determines visibility, content -->
+                <br>
+                <label id="lblDebugBanner" style="color:red; font-size:x-large;font-weight:bold"></label>
+            </div>
+           
+        </div>
+        <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+            <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+        </div>
+    </div>
+
+    <!-- start: search & user box -->
+    <div class="header-right ng-hide" ng-show="userData.isUserLoggedIn">
+
+        <!--<span class="separator"></span>-->
+
+        <div id="userbox" class="userbox">
+            <div class="cart"><a ng-href="#/shoppingCart" title="Shopping Cart" href="#/shoppingCart"><i class="fa fa-shopping-cart"></i></a></div>
+            <div data-toggle="dropdown">
+                <div class="profile-info">
+                    <span class="name">Welcome!</span>
+                    <span class="role ng-binding"></span>
+                </div>
+                <span style="cursor: pointer" role="menuitem" tabindex="-1" ng-click="logout();" class="name logout" href="#"><i class="fa fa-power-off name"></i> Logout</span>
+            </div>
+
+            <div class="dropdown-menu">
+                <ul class="list-unstyled">
+                    <li class="divider">
+                        <a role="menuitem" tabindex="-1" ng-click="navChangeAccount();"><i class="fa fa-power-off"></i> Change Account Details</a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end: search & user box -->
+</header>
+
+<!-- end: header -->
+
+<!-- TFS#2607; add banners that will change automatically with host (server/connection) name -->
+<script type="text/javascript" class="ng-scope">
+    $(function () {
+        var xxx = window.location.hostname;
+        
+        if (xxx.indexOf("ccfs.sos") != -1) {
+            $('#debugBanner').css('visibility', 'hidden');
+        } else if (xxx.indexOf('ts-ccfs') != -1) {
+            $('#debugBanner').css('visibility', 'visible');
+            $('#lblDebugBanner').html("* P R E - P R O D *");
+        } else if (xxx.indexOf("localhost") != -1) {
+            $('#debugBanner').css('visibility', 'visible');
+            $('#lblDebugBanner').html("* L O C A L *");
+        }
+    });
+</script></ng-include>
+    <div class="inner-wrapper">
+            <header class="page-header">
+                <h2>Business Search</h2>
+            </header>
+        <div class="ng-scope" ng-init="initBusinessSearch()">
+            <div class="panel-body" id="divBusinessInformation">
+                <div class="div_header">Business Information</div>
+                <div class="row-margin">
+                    <div class="row">
+                        <div class="col-md-2 alignright">
+                            Business Name:
+                        </div>
+                        <div class="col-md-4">
+                            <strong data-ng-bind="businesssearchcriteria.businessname+((businesssearchcriteria.DBABusinessName==null ||businesssearchcriteria.DBABusinessName=='')?'':' DBA '+businesssearchcriteria.DBABusinessName)" class="ng-binding">A.A. ANDERSON CO., INC.</strong>
+                        </div>
+
+                        <div class="col-md-2 alignright">
+                            UBI Number:
+                        </div>
+                        <div class="col-md-4">
+                            <strong data-ng-bind="businesssearchcriteria.ubinumber" class="ng-binding">371 003 148</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div>
+                    <div class="div_header">Filing History</div>
+                    <div class="row-margin">
+                        <div class="row">
+                            <div class="col-md-12 table-responsive table-striped">
+                                <table class="table table-striped table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <td class="bg-primary" ng-click="sortBy('FilingNumber')"><strong>Filing Number</strong><!-- ngIf: reverse == false &&propertyName == 'FilingNumber' --><!-- ngIf: reverse == true && propertyName == 'FilingNumber' --></td>
+                                            <td class="bg-primary" ng-click="sortBy('FilingDateTime')"><strong>Filing Date Time</strong><!-- ngIf: reverse == false &&propertyName == 'FilingDateTime' --><!-- ngIf: reverse == true && propertyName == 'FilingDateTime' --></td>
+                                            <td class="bg-primary" ng-click="sortBy('EffectiveDate')"><strong>Effective Date</strong><!-- ngIf: reverse == false &&propertyName == 'EffectiveDate' --><!-- ngIf: reverse == true && propertyName == 'EffectiveDate' --></td>
+                                            <!--<td class="bg-primary"><strong>Processed By</strong></td>-->
+                                            <td class="bg-primary" ng-click="sortBy('FilingTypeName')"><strong>Filing Type</strong><!-- ngIf: reverse == false &&propertyName == 'FilingTypeName' --><!-- ngIf: reverse == true && propertyName == 'FilingTypeName' --></td>
+                                            <td class="bg-primary"><strong>Action</strong></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody ng-show="businessFilings.length  &gt; 0" class="">
+                                        <!-- ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0021866328</td>
+                                            <td class="ng-binding">03/04/2025 09:10:24 AM</td>
+
+                                            <td class="ng-binding">03/04/2025</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0021763662</td>
+                                            <td class="ng-binding">03/01/2025 04:06:58 AM</td>
+
+                                            <td class="ng-binding">03/01/2025</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT DUE DATE NOTICE</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0019984964</td>
+                                            <td class="ng-binding">03/11/2024 11:34:51 AM</td>
+
+                                            <td class="ng-binding">03/11/2024</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0019909678</td>
+                                            <td class="ng-binding">03/01/2024 05:30:21 AM</td>
+
+                                            <td class="ng-binding">03/01/2024</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT DUE DATE NOTICE</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0018262300</td>
+                                            <td class="ng-binding">03/31/2023 03:12:55 PM</td>
+
+                                            <td class="ng-binding">03/31/2023</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0018179090</td>
+                                            <td class="ng-binding">03/01/2023 08:21:15 PM</td>
+
+                                            <td class="ng-binding">03/01/2023</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT DUE DATE NOTICE</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0016501466</td>
+                                            <td class="ng-binding">03/14/2022 10:31:15 AM</td>
+
+                                            <td class="ng-binding">03/14/2022</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0016445722</td>
+                                            <td class="ng-binding">03/01/2022 12:12:39 PM</td>
+
+                                            <td class="ng-binding">03/01/2022</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT DUE DATE NOTICE</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0014816018</td>
+                                            <td class="ng-binding">03/15/2021 11:35:06 AM</td>
+
+                                            <td class="ng-binding">03/15/2021</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0014763000</td>
+                                            <td class="ng-binding">03/01/2021 05:18:13 AM</td>
+
+                                            <td class="ng-binding">03/01/2021</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT DUE DATE NOTICE</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0013440246</td>
+                                            <td class="ng-binding">04/23/2020 04:36:19 PM</td>
+
+                                            <td class="ng-binding">04/23/2020</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0013247298</td>
+                                            <td class="ng-binding">03/01/2020 06:33:00 AM</td>
+
+                                            <td class="ng-binding">03/01/2020</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT DUE DATE NOTICE</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0011907174</td>
+                                            <td class="ng-binding">04/19/2019 12:10:32 PM</td>
+
+                                            <td class="ng-binding">04/19/2019</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0011731857</td>
+                                            <td class="ng-binding">03/01/2019 07:03:21 AM</td>
+
+                                            <td class="ng-binding">03/01/2019</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT DUE DATE NOTICE</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0010502419</td>
+                                            <td class="ng-binding">04/25/2018 10:59:35 AM</td>
+
+                                            <td class="ng-binding">04/25/2018</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0010201317</td>
+                                            <td class="ng-binding">03/01/2018 06:28:33 AM</td>
+
+                                            <td class="ng-binding">03/01/2018</td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT DUE DATE NOTICE</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0009402962</td>
+                                            <td class="ng-binding">04/06/2017 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0009076891</td>
+                                            <td class="ng-binding">04/07/2016 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0008662649</td>
+                                            <td class="ng-binding">04/13/2015 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0008254358</td>
+                                            <td class="ng-binding">03/19/2014 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0008006985</td>
+                                            <td class="ng-binding">04/04/2013 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0001054640</td>
+                                            <td class="ng-binding">07/03/2012 04:17:14 PM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">AMENDMENT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0007542475</td>
+                                            <td class="ng-binding">03/26/2012 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0007934075</td>
+                                            <td class="ng-binding">03/25/2011 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0006888054</td>
+                                            <td class="ng-binding">03/26/2010 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0006610806</td>
+                                            <td class="ng-binding">04/23/2009 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0006264875</td>
+                                            <td class="ng-binding">03/28/2008 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0006004294</td>
+                                            <td class="ng-binding">03/23/2007 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0005794991</td>
+                                            <td class="ng-binding">03/30/2006 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0005412493</td>
+                                            <td class="ng-binding">04/06/2005 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0005152344</td>
+                                            <td class="ng-binding">03/29/2004 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0005887771</td>
+                                            <td class="ng-binding">03/29/2003 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0005887770</td>
+                                            <td class="ng-binding">03/28/2003 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0004476349</td>
+                                            <td class="ng-binding">03/28/2002 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0004169574</td>
+                                            <td class="ng-binding">04/16/2001 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0003818963</td>
+                                            <td class="ng-binding">03/31/2000 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0003649543</td>
+                                            <td class="ng-binding">03/29/1999 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0003314539</td>
+                                            <td class="ng-binding">07/30/1985 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">INITIAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0003313792</td>
+                                            <td class="ng-binding">04/15/1985 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0003167567</td>
+                                            <td class="ng-binding">06/15/1983 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0003197506</td>
+                                            <td class="ng-binding">05/25/1982 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0003121564</td>
+                                            <td class="ng-binding">06/05/1981 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0003112863</td>
+                                            <td class="ng-binding">05/19/1980 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0003015620</td>
+                                            <td class="ng-binding">06/18/1979 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0003004043</td>
+                                            <td class="ng-binding">06/14/1978 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0003004042</td>
+                                            <td class="ng-binding">05/05/1978 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0003200098</td>
+                                            <td class="ng-binding">06/03/1977 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ANNUAL REPORT</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse --><tr ng-repeat="filing in businessFilings| orderBy:propertyName:reverse" class="ng-scope">
+                                            <td class="ng-binding">0003084993</td>
+                                            <td class="ng-binding">04/06/1976 12:00:00 AM</td>
+
+                                            <td class="ng-binding"></td>
+                                            <!--<td>{{filing.ProcessedBy | uppercase}}</td>-->
+                                            <td ng-bind="filing.FilingTypeName" class="ng-binding">ARTICLES OF INCORPORATION</td>
+                                            <!--<td ng-if="filing.DocumentId > 0">
+                                                <i class="fa fa-file-text-o fa-lg" style="cursor:pointer" filename="filing.FileName" params="filing" url="Common/DownloadFileByNumber?filingNo={{filing.FilingNumber}}" title="Download" download-file ng-bind="filing.FilingTypeName">
+                                                    <span ng-bind="filing.FilingTypeName"></span>
+                                                </i>
+                                            </td>-->
+                                            <td>
+                                                <a class="btn-link" style="cursor:pointer" ng-click="getTransactionDocumentsList(filing.FilingNumber,filing.Transactionid,filing.FilingTypeName)">View Documents</a>
+                                            </td>
+                                            <!--<td ng-if="filing.DocumentId == 0"></td>-->
+                                        </tr><!-- end ngRepeat: filing in businessFilings| orderBy:propertyName:reverse -->
+                                    </tbody>
+                                    <tbody ng-show="businessFilings.length  &lt;= 0" class="ng-hide">
+                                        <tr>
+                                            <td colspan="6" ng-bind="messages.RegisteredAgent.emptyRecordsMsg" class="ng-binding">No Value Found.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade row searchresult" role="dialog" id="divSearchResult">
+                    <div>
+                        <div class="modal-dialog" style="width:80%;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div>
+                                        <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-title"><h4>View Documents</h4></div>
+                                    </div>
+                                </div>
+                                <div class="searchresult modal-body" style="max-height:600px;overflow-y:auto;">
+                                    <div class="row table-responsive table-striped">
+                                        <table style="width:100%" border="0" cellpadding="4" cellspacing="0" class="table table-responsive table-striped">
+                                            <thead>
+                                                <tr align="center" class="bg-primary text-center">
+                                                    <!--<th>File Name</th>-->
+                                                    <th>Document Type</th>
+                                                    <!--<th>Created By</th>-->
+                                                    <th>Created Date</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <!-- ngRepeat: document in transactionDocumentsList -->
+                                            <tbody data-ng-hide="transactionDocumentsList.length&gt;0" class="">
+                                                <tr><td colspan="5" ng-bind="messages.RegisteredAgent.emptyRecordsMsg" class="ng-binding">No Value Found.</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                <div>
+                    <cf-turnstile class="ng-isolate-scope"><!-- ngIf: isTurnstileEnable --><div class="cf-turnstile ng-scope" ng-if="isTurnstileEnable"><div><input type="hidden" name="cf-turnstile-response" id="cf-chl-widget-6kima_response" value="0.l5hWgnXIOVlqw-AVa5XH0hkfdDM08CXsHLEtNZSuv5hiUv_sIeGj_UZw_LZEH1RgiLqtyBC6r9TP9pn8rjht9Ey6VZolVQBBTkUgngn4tRTvgf83Lftv5dfrt34tztTKZldO3LeScPaHLOKyEBUoiuFI5s36dLY3ERjloUzH-dUk6GMTB4GzDN9uFroKOce8K4_ja0nIj28rZxOfFXF-bYkzUJGfJfQic7xsA_Ypanmo3-1rHwRGvYt2pmfSciw25L7PkHhww4t7AC-RXVTwMWpH4NxJtL7OvESMhUR-iGAgEd7Mdn4-iGfUAA625eQiOuuIwbRG0dz9C5kvzD0DgVK9p5IUsEyk7IihNqzTWrQe8r1aWR-gGP-PQvRjmz-x4fMskRWSUl97mMUyv042OoFQ67ustkrqZpYcoWTrb5SxkbFWlHzUYp78pnqJ8L2sNKKpg-l5djPvY3zrX_2FP_OJ9b-Wl8nmDsKXu5ZrNEq_Ww-s568_u48z-17sKnzi3TGSqYDQVNV3829rF0XT6OEkr1T-cGPIJd87A3UcvBHgq4lqvBEtlEat1JaVeYvPWydifLJT87yzNaQDgsycUWQkJTmWyZ3dTqYd-sQNUvly1vHBfbXTKKLSoyg49HT6rZnmW_mEo95fjVxQiMxQd6YPgqNvY6MoS-wp1sjRvBf3ROeteGzrhupymNOsv22w0pGAm-EVHbarmbsXEGm44PQXjrgDffHCBQjRosW1KbNmUl1W8B00VcPoLQWzTLgKFgy6zMfg4jtMfY2a_VoqfMwktctYOvXCOSX8Bqtp8wp9cldaFfnr1JZKuyoCWFBE51ngDQQZEm70YhFwGzijwmlgih8Dsz-9Tps_0PQ5sVo-ZW2bqaWCjx1KP9rHHhYxbI-e5Eu8gw6m7AC8Mjp8ZjCupFq4X-e5VcPKz4R3xquFQrZq7pQhIIpquUj6qgQkjO6fwoawDqLgeFLikA1LUA.OtWSX1xPrB8f46Bjrb-37Q.c6795d5733b0fc810b25969d8a0452bb169abae5b2fd56082c21b7380d1ef6d2"></div></div><!-- end ngIf: isTurnstileEnable --></cf-turnstile>
+                </div>
+                <div class="col-md-6">
+                    <!-- ngIf: isBackButtonHide -->
+                    <!-- ngIf: !isBackButtonHide --><div data-ng-if="!isBackButtonHide" class="ng-scope">
+                        <button ng-click="showBusineInfo(businesssearchcriteria.businessid,businesssearchcriteria.businesstype);" class="btn btnbgclr btn-md btn-back ng-scope">Back</button>
+                    </div><!-- end ngIf: !isBackButtonHide -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section></div>
+
+
+
+<!-- end: page --></ng-include>
+    </div>
+
+    <script type="text/javascript" src="bundles/vendor-js?version=20251104.2"></script>
+    <link href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet">
+    <!-- application -->
+
+    <script type="text/javascript" src="bundles/ccfs-js?version=20251104.2"></script>
+
+    <link href="assets/css/ngDialog.min.css" rel="stylesheet">
+    <link href="assets/css/ngDialog-theme-default.min.css" rel="stylesheet">
+    <link href="assets/css/ngDialog-theme-plain.min.css" rel="stylesheet">
+
+    <!--<div id="loaderDiv" loader><img src="/assets/images/ajax-loader.gif" class="ajax-loader" /></div>-->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer=""></script>
+
+</body></html><html class="fixed js flexbox flexboxlegacy csstransforms csstransforms3d no-overflowscrolling no-mobile-device custom-scroll ng-scope" ng-app="wacorpApp" style=""><!-- fixed sidebar-left-collapsed to fix an issue per TAS --><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <script async="" src="https://www.datadoghq-browser-agent.com/us3/v5/datadog-rum.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7B08VE04WV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7B08VE04WV');
+    </script>
+    <!-- Basic -->
+    <meta charset="UTF-8">
+
+    <title>Corporations and Charities System</title>
+    <meta name="keywords" content="CCFS">
+    <meta name="google" content="notranslate">
+    <meta name="description" content="Washington Corporations and Charities Filing System">
+    <meta name="author" content="pcctg.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Metas   -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Web Fonts  -->
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css">
+    <link rel="stylesheet" href="assets/vendor/morris/morris.css">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/toastr.css" rel="stylesheet">
+    <link href="assets/css/loading-bar.css?version=20251104.2" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/theme.css?version=20251104.2">
+    <link rel="stylesheet" href="assets/css/skins/default.css?version=20251104.2">
+    <link rel="stylesheet" href="assets/css/theme-custom.css">
+    <script src="assets/vendor/modernizr/modernizr.js?version=20251104.2"></script>
+    <link href="assets/css/progress-wizard.min.css" rel="stylesheet">
+    <link href="ng-app/directives/AutoComplete/autocomplete.css" rel="stylesheet">
+    <link href="assets/css/custom.css?version=20251104.2" rel="stylesheet">
+
+    <!--<link href="assets/css/treasure-overlay-spinner.min.css" rel="stylesheet" />-->
+    <style>
+        #loaderDiv {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1100;
+            background-color: white;
+            opacity: .6;
+        }
+
+        .ajax-loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -32px; /* -1 * image width / 2 */
+            margin-top: -32px; /* -1 * image height / 2 */
+            display: block;
+        }
+    </style>
+
+    <script>
+        function printScreen(objreference) {
+            var contents = $(objreference).html();
+            var frame1 = $('<iframe />');
+            frame1[0].name = "frame1";
+            frame1.css({ "position": "absolute", "top": "-1000000px" });
+            $("body").append(frame1);
+            var frameDoc = frame1[0].contentWindow ? frame1[0].contentWindow : frame1[0].contentDocument.document ? frame1[0].contentDocument.document : frame1[0].contentDocument;
+            frameDoc.document.open();
+            //Create a new HTML document.
+            frameDoc.document.write('<html><head><title></title>');
+            frameDoc.document.write('</head><body>');
+            //Append the external CSS file.
+            frameDoc.document.write('<style>.bg-primary{text-align:left;}.div_header {text-transform: uppercase;font-size:22px;padding: 15px 0 4px 0; font-family: "arial";}.alignright{padding-top:6px;} .div_header{border-bottom:1px solid #000; margin-bottom:4px;}</style>');
+            //Append the DIV contents.
+            frameDoc.document.write(contents);
+            frameDoc.document.write('</body></html>');
+            frameDoc.document.close();
+            setTimeout(function () {
+                window.frames["frame1"].focus();
+                window.frames["frame1"].print();
+                frame1.remove();
+            }, 500);
+        }
+    </script>
+    <script src="apiURL.js"></script>
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+
+<body>
+    <script>
+        (function (h, o, u, n, d) {
+            h = h[d] = h[d] || { q: [], onReady: function (c) { h.q.push(c) } }
+            d = o.createElement(u); d.async = 1; d.src = n
+            n = o.getElementsByTagName(u)[0]; n.parentNode.insertBefore(d, n)
+        })(window, document, 'script', 'https://www.datadoghq-browser-agent.com/us3/v5/datadog-rum.js', 'DD_RUM')
+        window.DD_RUM.onReady(function () {
+            window.DD_RUM.init({
+                clientToken: window.aPIURL.clientToken,
+                applicationId: window.aPIURL.applicationId,
+                site: 'us3.datadoghq.com',
+                service: 'ccfs-online',
+                env: window.aPIURL.env + '-ccfs',
+                // Specify a version number to identify the deployed version of your application in Datadog
+                // version: '1.0.0',
+                sessionSampleRate: window.aPIURL.sessionSampleRate,
+                sessionReplaySampleRate: window.aPIURL.sessionReplaySampleRate,
+                trackUserInteractions: true,
+                trackResources: true,
+                trackLongTasks: true,
+                defaultPrivacyLevel: 'mask-user-input',
+                allowedTracingUrls: [window.aPIURL.serviceUrl]
+            });
+        })
+    </script>
+    <div ng-controller="rootController" ng-init="rootInit()" class="ng-scope">
+        <!-- ngInclude: undefined --><ng-include src="masterLayout()" class="ng-scope" style=""><style type="text/css" class="ng-scope">
+    body {
+        background: #fff !important;
+    }
+</style>
+
+<!-- start: page -->
+
+<!-- ngView:  --><div ng-view="" class="ng-scope"><section class="content-body2 ng-scope">
+    <!-- ngInclude: undefined --><ng-include src="'ng-app/view/layout/topBar.html'" class="ng-scope"><!-- start: header -->
+
+<header class="header ng-scope">
+    <div class="logo-container">
+        <div class="logo">
+            <a ng-click="redirect();"><img class="pull-left" src="assets/images/seal.png" alt="Washington" height="54" title="Dashboard"></a>
+            <div class="col-md-6">
+                <h3>Corporations and Charities Filing System</h3>
+            </div>
+
+            <div class="col-md-4 right-label">
+                <!-- TFS#2607; revamped banner; JS below determines visibility, content -->
+                <br>
+                <label id="lblDebugBanner" style="color:red; font-size:x-large;font-weight:bold"></label>
+            </div>
+           
+        </div>
+        <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+            <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+        </div>
+    </div>
+
+    <!-- start: search & user box -->
+    <div class="header-right ng-hide" ng-show="userData.isUserLoggedIn">
+
+        <!--<span class="separator"></span>-->
+
+        <div id="userbox" class="userbox">
+            <div class="cart"><a ng-href="#/shoppingCart" title="Shopping Cart" href="#/shoppingCart"><i class="fa fa-shopping-cart"></i></a></div>
+            <div data-toggle="dropdown">
+                <div class="profile-info">
+                    <span class="name">Welcome!</span>
+                    <span class="role ng-binding"></span>
+                </div>
+                <span style="cursor: pointer" role="menuitem" tabindex="-1" ng-click="logout();" class="name logout" href="#"><i class="fa fa-power-off name"></i> Logout</span>
+            </div>
+
+            <div class="dropdown-menu">
+                <ul class="list-unstyled">
+                    <li class="divider">
+                        <a role="menuitem" tabindex="-1" ng-click="navChangeAccount();"><i class="fa fa-power-off"></i> Change Account Details</a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end: search & user box -->
+</header>
+
+<!-- end: header -->
+
+<!-- TFS#2607; add banners that will change automatically with host (server/connection) name -->
+<script type="text/javascript" class="ng-scope">
+    $(function () {
+        var xxx = window.location.hostname;
+        
+        if (xxx.indexOf("ccfs.sos") != -1) {
+            $('#debugBanner').css('visibility', 'hidden');
+        } else if (xxx.indexOf('ts-ccfs') != -1) {
+            $('#debugBanner').css('visibility', 'visible');
+            $('#lblDebugBanner').html("* P R E - P R O D *");
+        } else if (xxx.indexOf("localhost") != -1) {
+            $('#debugBanner').css('visibility', 'visible');
+            $('#lblDebugBanner').html("* L O C A L *");
+        }
+    });
+</script></ng-include>
+    <div class="inner-wrapper">
+        <header class="page-header">
+            <h2>Business Search</h2>
+        </header>
+        <div class="ng-scope" ng-init="initBusinessSearch()">
+            <div class="panel-body" id="divBusinessInformation">
+                <div class="div_header">Entity Information</div>
+                <div class="row-margin">
+                    <div class="row">
+                        <div class="col-md-2 alignright">
+                            Business Name:
+                        </div>
+                        <div class="col-md-4">
+                            <strong data-ng-bind="businesssearchcriteria.businessname+((businesssearchcriteria.DBABusinessName==null ||businesssearchcriteria.DBABusinessName=='')?'':' DBA '+businesssearchcriteria.DBABusinessName)" class="ng-binding">A.A. ANDERSON CO., INC.</strong>
+                        </div>
+
+                        <div class="col-md-2 alignright">
+                            UBI Number:
+                        </div>
+                        <div class="col-md-4">
+                            <strong class="ng-binding">371 003 148</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+
+                <div>
+                    <div class="div_header">Name Change History</div>
+                    <div class="row-margin">
+                        <div class="row">
+                            <div class="col-md-12 table-responsive table-striped">
+                                <table class="table table-striped table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <td class="bg-primary"><strong>Filing Number</strong></td>
+                                            <td class="bg-primary"><strong>Old Name</strong></td>
+                                            <td class="bg-primary"><strong>New Name</strong></td>
+                                            <td class="bg-primary"><strong>Created Date</strong></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody ng-show="businessNameHistoryList.length  &gt; 0" class="ng-hide">
+                                        <!-- ngRepeat: filing in businessNameHistoryList -->
+                                    </tbody>
+                                    <tbody ng-show="businessNameHistoryList.length  &lt;= 0" class="">
+                                        <tr>
+                                            <td colspan="4">No Value Found.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                <div>
+                    <cf-turnstile class="ng-isolate-scope"><!-- ngIf: isTurnstileEnable --><div class="cf-turnstile ng-scope" ng-if="isTurnstileEnable"><div><input type="hidden" name="cf-turnstile-response" id="cf-chl-widget-9mggq_response" value="0.54tZZxnD_3hg0z_YkliIUXzlbE3gNW66HmOuJWWfzKnAHxlU-logZtIgm4vl_2OdpZUgGHj_YHmkEgYDFa--prf9OV05xo0iP6FEQLgqwuK6kXzwYH3Xio7EGG6NySds7XSrB2noyCkXxjqM5v86m2lOGMjvMia68g5QG5ap46Trbsd46rKFPDUEW-ORNrcvVtBfJpDqWb5XFB0XvKng1Uji3SjVJrJTBsKNbK7sCicCxmAezdia83jTfB4Lb-47IhzASeS2bvzVE8OxYoJbLtXORw57j4-9F4sF6ikYcnt2TqkGgde8hI7rCvaasA7Ye-VNgiVclMcChzQOO7NEahUGYlhnP3qpb-7i7PJM-T7j5qJjxZ7Abo3JHw7GO44M0DVwOmrBj4Adj1ZvQkXlEgRysYlA0EmUBusgvUCGQ2PWF3wvT7OMAP3hesxyf9aLByxA_XWA3KfI04IdciSZCPN8Ei8hPpfp20qCDvKvGfffCWEvZKaVGaUNcJZVD1rahdbJ4mIuINxBIgHQfcgzybtAknfEs9bV9pDwJLb8GF6UOfjFy0CbSEnfPWndVvi-zKOV5YJU-1H6h1Zb4C0olJI61m5y77YjOA5Cl0oLz1-HzEYpdREiY4dW6STI682-4cizXPrw7LsNaBg3ePjTSkjJuzXDii6fse6sfQ9fhEWvsk139V51Dy0ZH8Q80mBSKxPxv655D-coI3muZqfxWsiRQqEko0l7wxZhbRaxW2A6WuS2iNTdCOC0Rix0psqIXsddRrVpFQBKyxZ7BqFsiMzjl6NgrI9PDM1im9qM6JSx_QvVF9Ml-5k65dtIBAiLjuK_Z_s5QfZIEWtS5yCwGP0QIqqbyBKk22VIhvk0OrZJvvef9-Hay1wtRyYDY7F38J3NDtaCB0WFz-ZSlLg-C9M2_idxB1vHrrvdjwsksrxSr25PRDytxoAXtermuyej8iA0XEfunmvb9bRwbBfb5A.zd0-P_gU8gEP_XHVLvPu7w.502cb0b566c31ed3dab07002673e4f3c8176c4441611f423d9f0afcedd3d3fb6"></div></div><!-- end ngIf: isTurnstileEnable --></cf-turnstile>
+                </div>
+                <div class="col-md-6">
+                    <!-- ngIf: isBackButtonHide -->
+                    <!-- ngIf: !isBackButtonHide --><div data-ng-if="!isBackButtonHide" class="ng-scope">
+                        <button ng-click="showBusineInfo(businesssearchcriteria.businessid,businesssearchcriteria.businesstype);" class="btn btnbgclr btn-md btn-back ng-scope">Back</button>
+                    </div><!-- end ngIf: !isBackButtonHide -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section></div>
+
+
+
+<!-- end: page --></ng-include>
+    </div>
+
+    <script type="text/javascript" src="bundles/vendor-js?version=20251104.2"></script>
+    <link href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet">
+    <!-- application -->
+
+    <script type="text/javascript" src="bundles/ccfs-js?version=20251104.2"></script>
+
+    <link href="assets/css/ngDialog.min.css" rel="stylesheet">
+    <link href="assets/css/ngDialog-theme-default.min.css" rel="stylesheet">
+    <link href="assets/css/ngDialog-theme-plain.min.css" rel="stylesheet">
+
+    <!--<div id="loaderDiv" loader><img src="/assets/images/ajax-loader.gif" class="ajax-loader" /></div>-->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer=""></script>
+
+</body></html>

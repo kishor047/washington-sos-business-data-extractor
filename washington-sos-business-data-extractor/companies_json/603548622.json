@@ -1,0 +1,67 @@
+{
+    "company_name": "A.A. ALBERTSON PAINTING L.L.C.",
+    "ubi": "603548622",
+    "business_information": {
+        "Business Name": "A.A. ALBERTSON PAINTING L.L.C.",
+        "UBI Number": "603 548 622",
+        "Business Type": "WA LIMITED LIABILITY COMPANY",
+        "Business Status": "ADMINISTRATIVELY DISSOLVED",
+        "Expiration Date": "10/31/2016",
+        "Jurisdiction:\nUNITED STATES, WASHINGTON": "Jurisdiction:\nUNITED STATES, WASHINGTON",
+        "Formation/ Registration Date": "10/16/2015",
+        "Period of Duration": "PERPETUAL",
+        "Inactive Date": "05/01/2017"
+    },
+    "registered_agent": {
+        "name": "ALBERT ALBERTSON",
+        "street_address": "8221 WAYNE AVE, STANWOOD, WA, 98292-0000, UNITED STATES"
+    },
+    "governors": [
+        {
+            "title": "GOVERNOR",
+            "type": "INDIVIDUAL",
+            "entity_name": "",
+            "first_name": "ALBERT",
+            "last_name": "ALBERTSON"
+        }
+    ],
+    "filing_history": [
+        {
+            "filing_number": "0009395307",
+            "filing_date_time": "05/01/2017 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "DISSOLUTION/WITHDRAWAL"
+        },
+        {
+            "filing_number": "0009395305",
+            "filing_date_time": "03/01/2017 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "DISSOLUTION/WITHDRAWAL"
+        },
+        {
+            "filing_number": "0009395306",
+            "filing_date_time": "03/01/2017 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "DISSOLUTION/WITHDRAWAL"
+        },
+        {
+            "filing_number": "0009442487",
+            "filing_date_time": "03/01/2017 12:00:00 AM",
+            "effective_date": "",
+            "filing_type": "CORRESPONDENCE WITH FEE"
+        },
+        {
+            "filing_number": "0001825628",
+            "filing_date_time": "10/19/2015 10:05:31 AM",
+            "effective_date": "10/16/2015",
+            "filing_type": "INITIAL REPORT"
+        },
+        {
+            "filing_number": "0001825173",
+            "filing_date_time": "10/19/2015 10:04:40 AM",
+            "effective_date": "",
+            "filing_type": "CERTIFICATE OF FORMATION"
+        }
+    ],
+    "name_change_history": []
+}
